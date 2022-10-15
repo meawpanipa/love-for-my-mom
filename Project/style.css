@@ -151,7 +151,7 @@ ul li:hover {
   position: absolute;
   display: block;
   opacity: 1;
-  transition: scale 1s;
+  transition: scale 1s opacity 2s;
   z-index: 10;
 
 }
@@ -227,7 +227,7 @@ ul li:hover {
     position: absolute;
     display: block;
     opacity: 1;
-    transition: scale 1s;
+    transition: scale 1s opacity 2s;
     z-index: 10;
 
   }
