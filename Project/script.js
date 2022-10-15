@@ -7,17 +7,17 @@ navBarToggle.addEventListener("click", function(){
 });
 
 let open_chest = document.getElementById('chest');
-document.body.style.backgroundColor = "black";
+let text = document.getElementById("intro");
+let bg = document.getElementById("bg");
+let note = document.getElementById("note");
 
-
-
-open_chest.addEventListener("click", function(){
+open_chest.addEventListener("click", function(item){
     document.getElementById("chest").src = "https://cdn.discordapp.com/attachments/817634371263397908/1030765156067708948/3.png";
-    document.body.style.backgroundColor = "#D8D8D8";
-    document.getElementsById("open-text").style.color= "black";
-    
-    
+    text.setAttribute("data-item-status", "open");
+    bg.setAttribute("data-item-status", "open");
+    note.setAttribute("data-item-status", "open");
 });
-
-
-
+function openChest(item){
+    console.log(item)
+    item.dataset.itemStatus = 'open';
+}
