@@ -11,6 +11,7 @@ let text = document.getElementById("intro");
 let bg = document.getElementById("bg");
 let note = document.getElementById("note");
 let click_circle = document.getElementById("click_circle");
+let note_click = document.getElementById("note-open");
 
 open_chest.addEventListener("click", function(item){
     document.getElementById("chest").src = "https://cdn.discordapp.com/attachments/817634371263397908/1030765156067708948/3.png";
@@ -23,3 +24,11 @@ function openChest(item){
     console.log(item)
     item.dataset.itemStatus = 'open';
 }
+
+click_circle.addEventListener("click", function(item){
+
+    // note.setAttribute("data-item-status", "close");
+    // click_circle.setAttribute("data-item-status", "close");
+    // note_click.setAttribute("data-item-status", "open");
+    alert("text");
+});
