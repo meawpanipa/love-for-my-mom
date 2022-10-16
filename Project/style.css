@@ -27,6 +27,38 @@ body[data-item-status="open"] {
   transition: all 2s;
 }
 
+@keyframes kraprip{
+  0% {
+    opacity: 0.5;
+    scale: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+    scale: 1;
+  }
+  100% {
+    opacity: 0.5;
+    scale: 0.9;
+  }
+
+}
+ 
+  /* (D) MATCH HEIGHT */
+  .res-circle::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+   
+  /* (E) TEXT BLOCK */
+  .circle-txt {
+    /* (E1) CENTER TEXT IN CIRCLE */
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
 
 
 /*----------------mobile---------------*/
@@ -156,6 +188,40 @@ ul li:hover {
 
 }
 
+.res-circle[data-item-status="close"] {
+      
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 380px;
+ 
+  background: #866E17;
+  
+ 
+  /* (C) NECESSARY TO POSITION TEXT BLOCK */
+  line-height: 0;
+  position: absolute;
+  z-index: 0;
+  
+  opacity: 0;
+}
+.res-circle[data-item-status="open"] {
+    
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 340px;
+ 
+  background: #866E17;
+  
+  opacity: 1;
+  /* (C) NECESSARY TO POSITION TEXT BLOCK */
+  line-height: 0;
+  position: absolute;
+  z-index: 21;
+  animation: kraprip 5s infinite;
+  transition: opacity 2s;
+  cursor: pointer;
+}
+
 /*-------desktop--------*/
 /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
 @media screen and (min-width: 890px) {
@@ -264,35 +330,39 @@ ul li:hover {
     transition: all 1s;
     font-size: 20px;
   }
-  .res-circle {
-    
+  .res-circle[data-item-status="close"] {
+      
     width: 100px;
     border-radius: 50%;
-  
+    margin-top: 380px;
    
     background: #866E17;
+    
    
     /* (C) NECESSARY TO POSITION TEXT BLOCK */
     line-height: 0;
     position: absolute;
-    z-index: 20;
+    z-index: 0;
+    
+    opacity: 0;
   }
+  .res-circle[data-item-status="open"] {
+    
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 380px;
    
-  /* (D) MATCH HEIGHT */
-  .res-circle::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-   
-  /* (E) TEXT BLOCK */
-  .circle-txt {
-    /* (E1) CENTER TEXT IN CIRCLE */
+    background: #866E17;
+    
+    opacity: 1;
+    /* (C) NECESSARY TO POSITION TEXT BLOCK */
+    line-height: 0;
     position: absolute;
-    bottom: 50%;
-    width: 100%;
-    text-align: center;
-    color: white;
+    z-index: 21;
+    animation: kraprip 5s infinite;
+    transition: opacity 2s;
+    cursor: pointer;
   }
+  
 
 }
