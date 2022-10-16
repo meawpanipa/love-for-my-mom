@@ -131,8 +131,8 @@ ul li:hover {
 }
 
 #chest {
-  width: 400px;
-  margin-top: 100px;
+  width: 70%;
+  margin-top: 10vh;
   cursor: pointer;
   z-index: 1;
 }
@@ -141,6 +141,7 @@ ul li:hover {
   display: flex;
   position: relative;
   justify-content: center;
+  margin-top: 20%;
 
 }
 
@@ -177,9 +178,8 @@ ul li:hover {
 }
 
 #note[data-item-status="open"] {
-  width: 350px;
-  height: 150px;
-  margin-top: 300px;
+  width: 60%;
+  margin-top: 56%;
   position: absolute;
   display: block;
   opacity: 1;
@@ -206,9 +206,10 @@ ul li:hover {
 }
 .res-circle[data-item-status="open"] {
     
-  width: 100px;
+  width: 13%;
+  margin-top: 63%;
   border-radius: 50%;
-  margin-top: 340px;
+  
  
   background: #866E17;
   
@@ -224,7 +225,7 @@ ul li:hover {
 
 /*-------desktop--------*/
 /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 800px) {
   nav {
     height: 80px;
     flex-direction: row;
@@ -265,13 +266,15 @@ ul li:hover {
     display: flex;
     position: relative;
     justify-content: center;
-
+    overflow: hidden;
+    margin-top: 7%;
   }
 
   #chest {
-    width: 400px;
-    margin-top: 150px;
+    width: 600px;
+    margin-top: 0%;
     z-index: 1;
+    overflow: hidden;
   }
 
   #note[data-item-status="close"] {
@@ -287,9 +290,9 @@ ul li:hover {
   }
 
   #note[data-item-status="open"] {
-    width: 350px;
-    height: 150px;
-    margin-top: 350px;
+    width: 550px;
+    height: 200px;
+    margin-top: 320px;
     position: absolute;
     display: block;
     opacity: 1;
