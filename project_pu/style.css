@@ -144,6 +144,13 @@ ul li:hover {
   cursor: pointer;
   z-index: 1;
 }
+/* #chest {
+    width: 25%;
+    margin-top: 5%;
+    z-index: 1;
+    overflow: hidden;
+    
+  } */
 
 .wrap {
   display: flex;
@@ -193,6 +200,30 @@ ul li:hover {
   opacity: 1;
   transition: scale 1s opacity 2s;
   z-index: 10;
+
+}
+#note-open[data-item-status="close"] {
+  width: 40%;
+  height: 100%;
+  margin-top: 5%;
+  position: absolute;
+  display: block;
+  opacity: 0;
+
+  z-index: -1;
+
+}
+#note-open[data-item-status="open"] {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  animation: fade 1s;
+  scale: 1.1;
+  z-index: 10;
+  
 
 }
 
@@ -274,7 +305,7 @@ ul li:hover {
     display: flex;
     position: relative;
     justify-content: center;
-    overflow: hidden;
+ 
     margin-top: 0%;
   }
 
@@ -283,6 +314,7 @@ ul li:hover {
     margin-top: 5%;
     z-index: 1;
     overflow: hidden;
+    cursor: pointer;
   }
 
   #note[data-item-status="close"] {
