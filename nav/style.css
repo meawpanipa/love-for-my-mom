@@ -16,7 +16,13 @@ body {
     position: relative;
     flex-direction: column;
     color: #fff;
+    overflow: hidden;
+    z-index: 1;
   }
+.sticky {
+    position: fixed;
+    width: 100%;
+}
   .nav-toggle{
     position: absolute;
     top: 20px;
