@@ -8,109 +8,7 @@ body {
   overflow: hidden;
 }
 
-.card {
-  position: relative;
 
-  transition: 0.3s;
-  width: 26.5%;
-  height: 50%;
-
-  z-index: 2;
-}
-
-
-.card-block[data-item-status="close"] {
-  position: absolute;
-  display: none;
-  text-align: center;
-  background: rgb(96, 28, 168);
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  justify-content: center;
-  margin-top: 7vh;
-
-}
-
-.card-block[data-item-status="open"] {
-  position: absolute;
-  display: flex;
-  text-align: center;
-  margin-left: 0%;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 3%;
-  z-index: 2;
-}
-
-.card_top {
-  background-color: white;
-  width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
-
-.card_info {
-  background-color: #E3BF3F;
-  color: white;
-  width: 100%;
-  height: 20%;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  padding-top: 5%;
-  font-size: 100%;
-
-}
-
-
-
-button {
-
-  border-color: white;
-  padding: 0.3em;
-  width: 60px;
-  height: 60px;
-  border: 2px solid rgb(222, 222, 222);
-  opacity: 0.7;
-  position: absolute;
-  margin-left: 55%;
-  font-size: 200%;
-  cursor: pointer;
-
-  border-radius: 50%;
-}
-
-
-button:hover {
-  border: 2px solid rgb(141, 141, 141);
-  background-color: rgb(141, 141, 141);
-  color: #ffffff;
-}
-
-.triangle-left {
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-right: 50px solid rgb(255, 255, 255);
-  border-bottom: 25px solid transparent;
-  position: absolute;
-  margin-top: 50%;
-  margin-left: -15%;
-  cursor: pointer;
-}
-
-.triangle-right {
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-left: 50px solid rgb(255, 255, 255);
-  border-bottom: 25px solid transparent;
-  position: absolute;
-  margin-top: 50%;
-  margin-left: 105%;
-  cursor: pointer;
-}
 
 section {
   position: relative;
@@ -128,30 +26,6 @@ section {
 
 }
 
-#tatto {
-  width: auto;
-  height: 90%;
-  margin-top: 6%;
-  
-}
-
-.tatto_name {
-  position: absolute;
-  width: 100%;
-  font-size: 100%;
-  margin-top: -9%;
-  font-weight: 600;
-  color: white;
-}
-
-
-
-
-
-
-
-
-
 /* ที่มาของสัก สันนิษฐานมาจากอักษรขอม */
 
 h2 {
@@ -163,15 +37,12 @@ h2 {
   color: #000000;
 }
 
-.title-text {
-  font-family: 'Krub';
-  font-weight: bold;
-}
+
 
 h3 {
   font-family: 'Kodchasan';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
 
   line-height: 160%;
   /* or 32px */
@@ -269,12 +140,227 @@ ul li:hover {
   /*เมื่อมีการเรียกใช้ตรงtoggle ที่เป็นแฮมเบอเกอร์*/
   display: flex;
 }
+.block {
+  position: relative;
+  display: flex;
+  text-align: center;
+  /* background: rgb(168, 28, 28); */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  justify-content: center;
+  margin-top: 7vh;
+
+}
+
+.block2 {
+  position: relative;
+  display: flex;
+  text-align: center;
+  /* background: rgb(0, 82, 197); */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh;
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.block3 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /* background: rgb(2, 125, 45); */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7vh;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.btn {
+  width: 100%;
+  /* background-color: rgb(235, 187, 11); */
+  position: relative;
+  display: inline-block;
+  height: 5vw;
+
+
+}
+.title-text {
+  font-family: 'Krub';
+  font-weight: 900;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 6vw;
+  margin-top: 5vh;
+}
+.sub_title{
+  font-size: 3vw;
+  margin-top: 2vh;
+  padding: 2%;
+  padding-left: 15%;
+  padding-right: 15%;
+  
+}
+.button-image {
+  
+  width: 50%;
+  margin: 0%;
+  margin-top: 0%;
+  margin-bottom: 5vh;
+  min-width: 300px;
+  cursor: pointer;
+}
+.card {
+  position: relative;
+
+  transition: 0.3s;
+  width: 70vw;
+  height: 40vh;
+
+  z-index: 2;
+}
+
+
+.card-block[data-item-status="close"] {
+  position: absolute;
+  display: none;
+  text-align: center;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  justify-content: center;
+  margin-top: 7vh;
+
+}
+
+.card-block[data-item-status="open"] {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  margin-left: 0%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 3%;
+  z-index: 2;
+  
+}
+
+.card_top {
+  background-color: white;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.card_info {
+  background-color: #E3BF3F;
+  color: white;
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 100%;
+
+}
+
+
+
+button {
+
+  border-color: white;
+  padding: 0.3em;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(222, 222, 222);
+  opacity: 0.7;
+  position: absolute;
+  margin-left: 55%;
+  font-size: 200%;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+
+button:hover {
+  border: 2px solid rgb(141, 141, 141);
+  background-color: rgb(141, 141, 141);
+  color: #ffffff;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid rgb(255, 255, 255);
+  border-bottom: 25px solid transparent;
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: -15vw;
+  cursor: pointer;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid rgb(255, 255, 255);
+  border-bottom: 25px solid transparent;
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 72vw;
+  cursor: pointer;
+}
+#tatto {
+  width: auto;
+  height: 100%;
+  margin-top: 6%;
+  padding: 0%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+.tatto_name {
+  position: absolute;
+    width: 100%;
+    font-size: 100%;
+    margin-top: -9%;
+    font-weight: 600;
+    color: white;
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  
+}
+#tatto_type{
+  font-size: 4vw;
+}
+#card_description{
+    font-size: 100%;
+  }
+
+
 
 /*-------desktop--------*/
 /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
 @media screen and (min-width: 800px) {
   nav {
-    height: 80px;
+    height: 50px;
     flex-direction: row;
   }
 
@@ -290,21 +376,27 @@ ul li:hover {
     /*ชิดขวา*/
     width: 80%;
     flex-direction: row;
-
+    
   }
 
   ul li {
     display: inline-block;
-    margin: 0 70px 0 0;
+    margin: 0 3vw 0 0;
     text-align: left;
     border-bottom-style: none;
     padding: 0;
-
+    font-size: 1vw;
   }
 
   .nav-toggle {
     display: none;
     /*ไม่แสดงแฮมเบอเกอร์*/
+  }
+  .title-text {
+    font-family: 'Krub';
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 4vw);
   }
 
 
@@ -313,12 +405,12 @@ ul li:hover {
     position: relative;
     display: flex;
     text-align: center;
-    background: rgb(168, 28, 28);
+    /* background: rgb(168, 28, 28); */
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 6%;
 
   }
 
@@ -326,23 +418,23 @@ ul li:hover {
     position: relative;
     display: flex;
     text-align: center;
-    background: rgb(0, 82, 197);
+    /* background: rgb(0, 82, 197); */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    margin-top:-1%;
     width: 100%;
     justify-content: center;
-
+    
   }
 
   .block3 {
     position: relative;
     display: inline-block;
     text-align: center;
-    background: rgb(2, 125, 45);
+    /* background: rgb(2, 125, 45); */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6%;
+    margin-top: 5%;
     width: 100%;
     justify-content: center;
 
@@ -350,7 +442,7 @@ ul li:hover {
 
   .btn {
     width: 100%;
-    background-color: rgb(235, 187, 11);
+    /* background-color: rgb(235, 187, 11); */
     position: relative;
     display: inline-block;
     height: 5vw;
@@ -361,11 +453,11 @@ ul li:hover {
 
 
   .button-image {
-    width: 28%;
+    width: 31%;
     margin: 3%;
     margin-top: 0%;
     margin-bottom: 0%;
-    min-width: 500px;
+    min-width: 350px;
     cursor: pointer;
   }
 
@@ -380,7 +472,143 @@ ul li:hover {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
+    
+  }
+  .sub_title{
+    font-size: 1.5vw;
+
+      padding: 0%;
+    
+  }
+  .card {
+    position: relative;
+  
+    transition: 0.3s;
+    width: auto;
+    height: 50%;
+  
+    z-index: 2;
+  }
+  
+  
+  .card-block[data-item-status="close"] {
+    position: absolute;
+    display: none;
+    text-align: center;
+    background: rgb(96, 28, 168);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 7vh;
+  
+  }
+  
+  .card-block[data-item-status="open"] {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-left: 0%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 3%;
+    z-index: 2;
+  }
+  
+  .card_top {
+    background-color: white;
+    width: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .card_info {
+    background-color: #E3BF3F;
+    color: white;
+    width: auto;
+    height: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+  
+  }
+  
+  
+  
+  
+  button {
+  
+    border-color: white;
+    padding: 0.3em;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(222, 222, 222);
+    opacity: 0.7;
+    position: absolute;
+    margin-left: 55%;
+    font-size: 200%;
+    cursor: pointer;
+  
+    border-radius: 50%;
+  }
+  
+  
+  button:hover {
+    border: 2px solid rgb(141, 141, 141);
+    background-color: rgb(141, 141, 141);
+    color: #ffffff;
+  }
+  
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid rgb(255, 255, 255);
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: -18%;
     cursor: pointer;
   }
+  
+  .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid rgb(255, 255, 255);
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 105%;
+    cursor: pointer;
+  }
+  #tatto {
+    width: auto;
+    height: 90%;
+    margin-top: 6%;
+    padding: 100px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+  }
+  
+  .tatto_name {
+    position: absolute;
+    width: 100%;
+    font-size: 70%;
+    margin-top: -9%;
+    font-weight: 600;
+    color: white;
+  }
+  #tatto_type{
+    font-size: 20px;
+    margin-top:-5%;
+  }
+  #card_description{
+    font-size: 13px;
+  }
+  
 
 }
