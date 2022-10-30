@@ -230,9 +230,9 @@ ul li:hover {
     }
     #PicAll{
         width: 85%;
-        height: 215%;
+        height: 250%;
         margin-left: 8%;
-        margin-top: -12%;
+        margin-top: -5%;
         position: absolute;
     }
 }
