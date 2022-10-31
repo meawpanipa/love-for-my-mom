@@ -24,35 +24,6 @@ section {
 
 }
 
-@keyframes kraprip {
-  0% {
-    opacity: 0.5;
-    scale: 0.9;
-  }
-
-  50% {
-    opacity: 0.6;
-    scale: 1;
-  }
-
-  100% {
-    opacity: 0.5;
-    scale: 0.9;
-  }
-
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.9;
-    scale: 0.5;
-  }
-
-  to {
-    opacity: 1;
-    scale: 1.1;
-  }
-}
 
 /* (D) MATCH HEIGHT */
 .res-circle::after {
@@ -60,17 +31,6 @@ section {
   display: block;
   padding-bottom: 100%;
 }
-
-/* (E) TEXT BLOCK */
-.circle-txt {
-  /* (E1) CENTER TEXT IN CIRCLE */
-  position: absolute;
-  bottom: 50%;
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-
 
 /*----------------mobile---------------*/
 nav {
@@ -180,15 +140,13 @@ ul li:hover {
   margin-top: 63%;
   border-radius: 50%;
 
-
   background: #866E17;
 
-  opacity: 1;
+  opacity: 0.7;
   /* (C) NECESSARY TO POSITION TEXT BLOCK */
   line-height: 0;
   position: absolute;
   z-index: 21;
-  animation: kraprip 5s infinite;
   transition: opacity 2s;
   cursor: pointer;
 }
@@ -253,17 +211,14 @@ ul li:hover {
 
     width: 100px;
     border-radius: 50%;
-    margin-top: 10px;
     background: #866E17;
     margin-left: 55%;
-    margin-top: -250;
-    opacity: 1;
+    margin-top: -330;
     /* (C) NECESSARY TO POSITION TEXT BLOCK */
     line-height: 0;
     position: absolute;
     z-index: 21;
-    animation: kraprip 5s infinite;
-    transition: opacity 2s;
+    opacity: 0.5;
     cursor: pointer;
   }
 
@@ -282,13 +237,14 @@ ul li:hover {
 
   .logo {
     position: relative;
+    animation: aura 5s;
   }
 
   #earth {
-    width: 55vw;
-    height: 30vw;
+    width: auto;
+    height: 32vw;
     position: absolute;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-left: 18vw;
   }
 
@@ -298,6 +254,8 @@ ul li:hover {
     position: absolute;
     margin-top: 26vh;
     margin-left: 50vw;
+    animation: mymove 3s infinite;
+    animation-timing-function: linear;
   }
 
   #chaba {
@@ -306,6 +264,8 @@ ul li:hover {
     position: absolute;
     margin-top: 18vh;
     margin-left: 57vw;
+    animation: mymove 3s infinite;
+    animation-timing-function: linear;
   }
 
   #people {
@@ -322,11 +282,15 @@ ul li:hover {
     position: absolute;
     margin-top: 63vh;
     margin-left: 22vw;
+    animation: aura 5s;
   }
 
   .suk {
     position: relative;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    overflow: hidden;
+    height: 68vh;
+    padding-top: 1%;
   }
 
   .sukpic {
@@ -346,7 +310,7 @@ ul li:hover {
   .des {
     position: relative;
     text-align: center;
-    margin-top: 18vh;
+    margin-top: 5vh;
     margin-left: 2vw;
   }
 
@@ -479,5 +443,75 @@ ul li:hover {
   z-index: 1000;
   z-index: 1;
   filter: blur(80px);
+  animation: aura 2s;
+}
+@keyframes aura{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes mymove {
+  100% {transform: rotate(360deg);}
+}
+#btnintro{
+  width: 13%;
+  height: 8%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #EDE646;
+  position: absolute;
+  bottom: 3%;
+  margin-left: 86%;
+}
+.btnintro-txt {
+  position: absolute;
+  bottom: 35%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+#btnintro[data-item-status="open"] {
+  opacity: 1;
+  z-index: 1;
+}
+#btnintro[data-item-status="close"] {
+  opacity: 0;
+  z-index: 0;
+}
+.dotwhite {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  margin-left: 15%;
+  opacity: 0.7;
+  margin-top: -5%;
+}
+
+.dotwhite:before {
+content: '';
+position: absolute;
+top: 6px;
+left: 6px;
+right: 6px;
+bottom: 6px;
+border-radius: 50%;
+z-index: 1000;
+}
+
+.dotwhite:after {
+content: '';
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+background: #ffffff;
+border-radius: 50%;
+z-index: 1000;
+z-index: 1;
+filter: blur(80px);
 }
 }
