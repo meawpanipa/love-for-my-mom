@@ -50,13 +50,9 @@ section{
   margin-left: 90%;
   position: absolute;
 }
-.sec2{
-  background: url('https://github.com/meawpanipa/love-for-my-mom/raw/main/picture/pic-page4-map/sec2-1.png') no-repeat;
-  background-position: bottom;
-  position: relative;
-  object-fit: cover;
-  /* border:1px solid rgb(238, 255, 0); */
-
+.sec2-con img{
+  height: 68.6%;
+  margin-top: auto;
 }
 .sec2-con{
   display: flex;
@@ -77,6 +73,8 @@ section{
 }
 .sec2-img{
   margin-left: 5%;
+  margin-top: 2%;
+
 }
 .sec2-info-1{
   /* border: 1px solid red; */
