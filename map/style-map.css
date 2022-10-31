@@ -24,18 +24,7 @@ section{
     
     /*justify-content:space-between;*/
 }
-.sec2-left{
-    border:1px solid red;
-    width: 180px;
-    margin-top: 96px;
-    margin-left: 135px;
-}
-.sec2-right{
-    border: 1px solid red;
-    margin-top: 96px;
-    margin-left: 120px;
-    width: 800px;
-}
+
 .sec1-img-center{
     display: block;
     margin-left: auto;
@@ -46,7 +35,7 @@ section{
   position: absolute;
   display: flex;
   justify-content: center;
-  height: 885px;
+  /* height: 885px; */
 }
 .sec1-img-left{
   /*border: 1px solid red;*/
@@ -65,6 +54,7 @@ section{
   background: url('https://github.com/meawpanipa/love-for-my-mom/raw/main/picture/pic-page4-map/sec2-1.png') no-repeat;
   background-position: bottom;
   position: relative;
+  object-fit: cover;
   /* border:1px solid rgb(238, 255, 0); */
 
 }
@@ -76,6 +66,7 @@ section{
 }
 .sec2-top{
   display: flex;
+  position: absolute;
 }
 .sec2-bottom{
   position: absolute;
@@ -85,16 +76,20 @@ section{
   
 }
 .sec2-img{
-  margin-left: 42px;
+  margin-left: 5%;
 }
 .sec2-info-1{
-  /*border: 1px solid red;*/
-  margin-left: 77px;
+  border: 1px solid red;
+  margin-left: 1%;
+  width: 320px;
 
 }
 .sec2-info-2{
   margin-top: 2%;
-  margin-left: 130px;
+  margin-left: 1%;
+  width: 1100px;
+  border: 1px solid red;
+
 }
 
 
