@@ -27,7 +27,7 @@ body[data-item-status="open"] {
   transition: all 2s;
 }
 
-@keyframes kraprip{
+/* @keyframes kraprip{
   0% {
     opacity: 0.5;
     scale: 0.9;
@@ -41,7 +41,7 @@ body[data-item-status="open"] {
     scale: 0.9;
   }
 
-}
+} */
 @keyframes fade{
   from{ opacity: 0.9;
     scale: 0.5;
@@ -209,7 +209,7 @@ ul li:hover {
   position: absolute;
   display: block;
   opacity: 0;
-
+  
   z-index: -1;
 
 }
@@ -223,7 +223,7 @@ ul li:hover {
   animation: fade 1s;
   scale: 1.1;
   z-index: 10;
-  
+  cursor: pointer;
 
 }
 
@@ -251,13 +251,14 @@ ul li:hover {
   
  
   background: #866E17;
+  opacity: 0.7;
   
-  opacity: 1;
+  
   /* (C) NECESSARY TO POSITION TEXT BLOCK */
   line-height: 0;
   position: absolute;
   z-index: 21;
-  animation: kraprip 5s infinite;
+
   transition: opacity 2s;
   cursor: pointer;
 }
@@ -388,7 +389,8 @@ ul li:hover {
     animation: fade 1s;
     scale: 1.1;
     z-index: 10;
-
+    cursor: pointer;
+    
   }
 
   .open-text[data-item-status="close"] {
@@ -433,17 +435,62 @@ ul li:hover {
     margin-top: 20%;
    
     background: #866E17;
-    
-    opacity: 1;
+    opacity: 0.7;
+ 
     /* (C) NECESSARY TO POSITION TEXT BLOCK */
     line-height: 0;
     position: absolute;
     z-index: 21;
-    animation: kraprip 5s infinite;
-    transition: opacity 2s;
+    
+    
     cursor: pointer;
   }
+  
+  .dot[data-item-status="close"] {
+    opacity: 0;
+  }
+  .dot[data-item-status="open"] {
+    opacity: 0.5;
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    border-radius: 50%;
+   margin-left: 28vw;
+    margin-top: 5vh;
+    opacity: 50%;
+    animation: 5s aura infinite;
+  }
 
+.dot:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.dot:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #f4e403;
+  border-radius: 50%;
+  z-index: 3;
+ 
+  filter: blur(80px);
+  animation: aura 2s;
+}
+@keyframes aura{
+  from{opacity: 0.3;}
+  50%{opacity: 0.8;}
+  to{opacity: 0.3;}
+}
   
   
 
