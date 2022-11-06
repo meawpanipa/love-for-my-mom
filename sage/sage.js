@@ -38,3 +38,25 @@ circle.addEventListener("click", function(item){
 
 
 
+// $("#divOne").before($("#divTwo"));
+
+
+// const swap = function (left, right) {
+//     const parentA = left.parentNode;
+//     const siblingA = left.nextSibling === right ? left: left.nextSibling;
+
+//     // Move `left` to before the `nodeB`
+//     nodeB.parentNode.insertBefore(left, right);
+
+//     // Move `nodeB` to before the sibling of `left`
+//     parentA.insertBefore(right, siblingA);
+// };
+
+var node1 = document.getElementById("left");
+var node2 = document.getElementById("right");
+function swapNodes(node1, node2) {
+    node2_copy = node2.cloneNode(true);
+    node1.parentNode.insertBefore(node2_copy, node1);
+    node2.parentNode.insertBefore(node1, node2);
+    node2.parentNode.replaceChild(node2, node2_copy);
+}
