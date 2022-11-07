@@ -12,7 +12,7 @@ body {
 
 section {
   position: relative;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   overflow: hidden;
   background-color: #D8D8D8;
@@ -23,7 +23,7 @@ section {
   position: relative;
   display: inline;
   background-color: antiquewhite;
-
+  
 }
 
 /* ที่มาของสัก สันนิษฐานมาจากอักษรขอม */
@@ -401,7 +401,7 @@ ul li:hover {
   /* this */
   position: relative;
   color: aliceblue;
-  top: 20vh;
+ 
 }
 
 .wrapper3>div {
@@ -415,7 +415,7 @@ ul li:hover {
 }
 
 .middle {
-
+  
   /* background-color: #d2c10b; */
   position: relative;
   justify-content: center;
@@ -436,8 +436,9 @@ ul li:hover {
 
 .info_text {
   display: block;
-  /* font-size: 1.7vw; */
+ 
   font-size: 2.63vw;
+
   /* background-color: aquamarine  ; */
   padding: 1%;
   line-height: 1.5;
@@ -454,6 +455,12 @@ ul li:hover {
   height: 90%;
   padding: 5vw;
 }
+#teacher3 {
+
+  height: 90%;
+  
+  
+}
 
 #left {
 
@@ -463,6 +470,9 @@ ul li:hover {
 #right {
 
   float: right;
+}
+#sec3{
+  margin-top: -20%;
 }
 
 
@@ -754,7 +764,7 @@ ul li:hover {
     margin-top: 3vh;
     padding: 0%;
 
-    line-height: 1.5;
+    line-height: 1.6;
 
 
   }
@@ -766,6 +776,10 @@ ul li:hover {
 
   #teacher2 {
     width: 70%;
+    height: auto;
+  }
+  #teacher3 {
+    width: 100%;
     height: auto;
   }
 
@@ -802,7 +816,9 @@ ul li:hover {
   .wrapper3 {
     display: none;
   }
-
+  #sec3{
+    margin-top: 0%;
+  }
   /*------------------- test ---------------------*/
 
 
