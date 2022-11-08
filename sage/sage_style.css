@@ -12,7 +12,7 @@ body {
 
 section {
   position: relative;
-  height: 100vh;
+  height: auto;
   justify-content: center;
   overflow: hidden;
   background-color: #D8D8D8;
@@ -366,10 +366,10 @@ ul li:hover {
 }
 
 .wrapper>div {
-  height: 50vh;
+  
   flex: 800px;
   /* and this */
-  background: rgb(8, 5, 76);
+  /* background: rgb(255, 255, 255); */
   position: relative;
   padding-left: 3%;
   padding-right: 3%;
@@ -381,16 +381,16 @@ ul li:hover {
   flex-wrap: wrap;
   /* this */
   position: relative;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   top: 20vh;
   
 }
 
 .wrapper2>div {
-  height: 50vh;
+  
   flex: 800px;
   /* and this */
-  background: rgb(8, 5, 76);
+  /* background: rgb(8, 5, 76); */
   position: relative;
 
 }
@@ -400,16 +400,16 @@ ul li:hover {
   flex-wrap: wrap;
   /* this */
   position: relative;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
  
 }
 
 .wrapper3>div {
-  height: 50vh;
+  
   
   flex: 800px;
   /* and this */
-  background: rgb(8, 5, 76);
+  /* background: rgb(8, 5, 76); */
   position: relative;
 
 }
@@ -437,7 +437,7 @@ ul li:hover {
 .info_text {
   display: block;
  
-  font-size: 2.63vw;
+  font-size:2.8vw;
 
   /* background-color: aquamarine  ; */
   padding: 1%;
@@ -446,18 +446,18 @@ ul li:hover {
 
 #teacher1 {
 
-  height: 90%;
-  padding: 5vw;
+  width: 80%;
+  
 }
 
 #teacher2 {
 
-  height: 90%;
+  width: 80%;
   padding: 5vw;
 }
 #teacher3 {
 
-  height: 90%;
+  width: 80%;
   
   
 }
@@ -472,7 +472,7 @@ ul li:hover {
   float: right;
 }
 #sec3{
-  margin-top: -20%;
+  
 }
 
 
@@ -796,7 +796,7 @@ ul li:hover {
     flex-wrap: wrap;
     /* this */
 
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -805,10 +805,10 @@ ul li:hover {
 
   .wrapper2>div {
     width: 50%;
-    height: 100vh;
+    
     flex: 20%;
     /* and this */
-    background: rgb(8, 5, 76);
+    /* background: rgb(8, 5, 76); */
 
 
   }
@@ -817,7 +817,7 @@ ul li:hover {
     display: none;
   }
   #sec3{
-    margin-top: 0%;
+    
   }
   /*------------------- test ---------------------*/
 
