@@ -16,6 +16,7 @@ section {
   justify-content: center;
   overflow: hidden;
   background-color: #D8D8D8;
+  
   /*background-color: yellow;*/
 }
 
@@ -743,9 +744,7 @@ ul li:hover {
     display: flex;
     /* background-color: #d2c10b; */
     position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
     height: 100%;
     width: 50vw;
   }
@@ -804,9 +803,9 @@ ul li:hover {
   }
 
   .wrapper2>div {
-    width: 50%;
     
-    flex: 20%;
+    
+    flex: 10%;
     /* and this */
     /* background: rgb(8, 5, 76); */
 
