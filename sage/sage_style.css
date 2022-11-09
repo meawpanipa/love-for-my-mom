@@ -20,12 +20,7 @@ section {
   /*background-color: yellow;*/
 }
 
-.container {
-  position: relative;
-  display: inline;
-  background-color: antiquewhite;
-  
-}
+
 
 /* ที่มาของสัก สันนิษฐานมาจากอักษรขอม */
 
@@ -66,8 +61,47 @@ h4 {
   text-align: center;
   color: #000000;
 }
+.button {
+  background-color: #EDE646;
+  border: none;
+  color: black;
+  padding: 1% 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 40%;
+  font-family: 'Krub';
+  position: absolute;
+  z-index: 3;
+  
+}
 
-/*nav*/
+.button:hover {
+  background-color: #f9f37d;
+}
+.frame{
+  display: flex;
+  /* background-color: #d2c10b; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  width: 100vw;
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+
 
 
 /*----------------mobile---------------*/
@@ -383,7 +417,7 @@ ul li:hover {
   /* this */
   position: relative;
   color: rgb(0, 0, 0);
-  top: 20vh;
+  margin-bottom: 5%;
   
 }
 
@@ -819,7 +853,25 @@ ul li:hover {
     
   }
   /*------------------- test ---------------------*/
+#sec6{
+  background: rgb(213,213,213);
+background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95%);
 
+}
+.star{
+  position:absolute ;
+  width: 40%;
+  height: auto;
+  z-index: 1;
+  animation: spin 10s infinite linear;
+  
+
+}
+.sumamry_pic{
+  z-index: 2;
+  margin-top: 15%;
+  width: 60%;
+}
 
 
 
