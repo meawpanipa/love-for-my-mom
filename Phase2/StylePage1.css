@@ -10,7 +10,7 @@ body {
 
 section {
   position: relative;
-  height: 100%;
+  /* height: 100%; */
   justify-content: center;
   overflow: hidden;
   background-color: #D8D8D8;
@@ -20,7 +20,6 @@ section {
 .container {
   position: relative;
   display: inline;
-  background-color: antiquewhite;
 
 }
 
@@ -462,25 +461,26 @@ ul li:hover {
   100% {transform: rotate(360deg);}
 }
 #btnintro{
-  width: 13%;
-  height: 8%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   background-color: #EDE646;
-  position: absolute;
-  bottom: 3%;
-  margin-left: 86%;
+  position: relative;
+  /* bottom: 1rem; */
   cursor : pointer;
+  right: 0%;
+  line-height: 2rem;
+  width: 20vw;
+  justify-content: right;
+  align-items: end;
+  text-align: center;
 }
 .btnintro-txt {
-  position: absolute;
-  bottom: 35%;
-  width: 100%;
   text-align: center;
   color: black;
   font-weight: 600;
+  padding: 1rem;
 }
 #btnintro[data-item-status="open"] {
   opacity: 1;

@@ -13,8 +13,8 @@ header{
     
 }
 section{
-    /*width: 1920px;*/
-    height: 1080px;
+    width: auto;
+    height: 100%;
     overflow: hidden;
     /*background-color: yellow;*/
 }
@@ -32,12 +32,15 @@ section{
 }
 .sec2-con{
     display: flex;
+    /* background-color: red; */
+}
+.sec3-con{
+    display: flex;
 }
 .sec2-left{
     /* border:1px solid red; */
-    width: 180px;
-    margin-top: 96px;
-    margin-left: 135px;
+    margin-top: 1%;
+    margin-left: 5%;
 }
 .sec2-right{
     /* border: 1px solid red; */
@@ -58,9 +61,8 @@ section{
 }
 .sec3-right {
     /* border: 1px solid red; */
-    margin-top: 96px;
-    margin-left: 120px;
-    width: 1235px;
+    margin-top: 1%;
+    margin-left: 5%;
 }
 .sec3-right2 {
     /* border: 1px solid red; */
@@ -78,7 +80,6 @@ section{
 }
 .sec6-info{
     margin-left: 25%;
-     margin-top: 5%;
     
 }
 .sec6-img{
@@ -88,7 +89,7 @@ section{
     margin-left: 18%;
 }
 .sec6-img-info{
-    margin-top: -15%;
+    margin-top: -20%;
     padding-bottom: 3%;
     text-align: center;
 }
@@ -99,9 +100,13 @@ section{
 .sec7-right{
     background-color: aqua;
 }
-.sec7pic-r{
+.koonpan{
     position: absolute;
-    margin-left: 50%;
+    /* width: 20vw; */
+    height: 100%;
+    margin-left: 68%;
+    margin-top: 9%;
+    
 }
 .sec7-right-info{
     /* border: 1px solid red; */
@@ -112,11 +117,14 @@ section{
 
 }
 .sec7-con{
-    background-color: #EFCC4F;
+    /* background-color: #EFCC4F; */
     position: relative;
+    
+    
 }
 .sec7-left img{
-    margin-top: 390px;
+    margin-top: 40%;
+    height: 50vh;
 }
 
 .sec7-center{
@@ -125,25 +133,23 @@ section{
 }
 .sec7-center-left{
     /* border:1px solid red; */
-    width: 200px;
-    margin-top: 96px;
-    margin-left: 135px;
+    margin-top: 5%;
+    margin-left: 10%;
     
 }
 .sec7-center-right{
     /* border: 1px solid red; */
-    margin-top: 96px;
-    margin-left: 120px;
-    width: 1050px;
+    /* margin-top: 2%; */
+    margin-left: 5%;
     
 }
 .sec7-center-right p{
-    font-size: 20px;
+    font-size: 120%;
 }
 .sec8-con{
     /* border: 1px solid ; */
     position: relative;
-    height: 1080px;
+
 
 }
 .sec8-center{
@@ -151,9 +157,9 @@ section{
     position: absolute;
 }
 .sec8-img-left{
-    margin-top: auto;
-    width: 760px;
-    
+    margin-top: 31%;
+    height: 30vh;
+    width: auto;    
 }
 .sec8-img-left img{
     margin-left: 10%;
@@ -161,14 +167,15 @@ section{
     
 }
 .sec8-img-center{
-    margin-top:auto;
+    margin-top:25%;
     margin-bottom: 3%;
+
     /*border: 1px solid red;*/
 
 }
 .sec8-img-right{
-    margin-top: auto;
-    
+    margin-top: 10%;
+    height: 80vh;
 }
 .sec8-info h2{
     font-family: 'Krub'; 
@@ -176,7 +183,7 @@ section{
     color: #EFCC4F;
 }
 .sec8-info p{
-    font-size: 20px;
+    font-size: 1vw;
     color: #EFCC4F;
 }
 .history-8{
@@ -185,13 +192,12 @@ section{
 }
 .sec8-info-left{
     width: 180px;
-    margin-top: 20%;
-    margin-left: 135px;
+    margin-top: 5%;
+    margin-left: 3%;
 }
 .sec8-info-right{
-    margin-top: 20%;
-    margin-left: 120px;
-    width: 1200px;
+    margin-top: 5%;
+    margin-left: 3%;
 }
 .sec8-img-right button{
     
@@ -218,28 +224,29 @@ section{
     position: absolute;
     /* border:1px solid red; */
     margin-left: 29%;
-    margin-top: 10%;
+    margin-top: 1%;
 }
 .tonayuthaya{
     position: absolute;
     width: 103vw;
     height: 85vh;
-    margin-top: 15%;
+    margin-top: 6%;
 }
 .sec5{
   position: relative;
+  /* background-color: #EDE646; */
 
 }
 .leksec5{
     position: absolute;
-    width: 90vw;
-    height: 100vh;
-    margin-top: 15%;
-    margin-left: 5%;
+    width: 80vw;
+    height: 85vh;
+    margin-top: 6%;
+    margin-left: 10%;
 }
 .sec5-info{
     position: absolute;
-    margin-top: 8%;
+    margin-top: 1%;
     margin-left: 8%;
     width: 85%;
 }
