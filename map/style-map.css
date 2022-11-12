@@ -14,7 +14,6 @@ body {
   max-width: 100%;
   /* height: 100%; */
   margin: 0 auto;
-  width: 100%;
   /*border:1px solid red;*/
 }
 
@@ -264,8 +263,76 @@ ul li:hover{
   .nav-toggle{
       display: none; /*ไม่แสดงแฮมเบอเกอร์*/
   }
-  
-  
+  .container {
+    position: relative;
 }
 
+.section {
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+  #NorthE{
+    position: relative;
+    text-align: center;
+}
+.title{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-left: 15%;
+}
+#headtext{
+    font-family: 'Krub';
+    font-weight: bold;
+    font-size: 350%;
+}
+.textblock{
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+#Describe{
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+#Quote{
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 130%;
+}
+#Map{
+    width: 6%;
+    height: 50%;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 1%
+}
+#Mek{
+    width: 30%;
+    height: 150%;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -5%
+}
+#PicAll{
+    width: 85%;
+    height: 250%;
+    margin-left: 8%;
+    margin-top: -5%;
+    position: absolute;
+}
+}
+  
 
