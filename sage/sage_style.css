@@ -871,8 +871,8 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
 }
 .star{
   position:absolute ;
-  width: 40%;
-  top: 32%;
+  width: 37%;
+  top: -1%;
   height: auto;
   z-index: 1;
   animation: spin 10s infinite linear;
@@ -881,7 +881,7 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
 }
 .sumamry_pic{
   z-index: 2;
-  margin-top: 26%;
+  
   width: 60%;
 }
 .tearmarks{
