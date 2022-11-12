@@ -1,18 +1,4 @@
-/*(() => {
-   function onScroll(){
-    const boat1Elem = document.querySelector('.boat1');
-    const jdElem = document.querySelector('.jd');
-   
-    boat1Elem.style.transform = `translate(${window.scrollY * 0.7}%, ${window.scrollY * -0.7}%)`;
-    jdElem.style.transform = `translate(${window.scrollY * -0.1 }%)`;
-   }
 
-   function run(){
-    document.addEventListener('scroll', onScroll);
-   }
-
-   run();
-})();*/
 
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-nav-toggle');
@@ -35,3 +21,35 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+function show_boy() {
+ 
+  document.getElementById('boy2').style.display = "block";
+  document.getElementById('btnID').style.display = "none";
+  document.getElementById('boy').style.display = "none";
+}
+function show_girl() {
+ 
+
+  document.getElementById('girl2').style.display = "block";
+  document.getElementById('btnID2').style.display = "none";
+  document.getElementById('girl').style.display = "none";
+}
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
