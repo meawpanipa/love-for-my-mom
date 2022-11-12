@@ -29,28 +29,23 @@ circle.addEventListener("click", function(item){
     
   
 });
-// function scrollTo(){
-    
-//     const element = document.getElementById("sec2");
-//     element.scrollIntoView({behavior: "smooth"});
-    
-// }
-
-
-
-// $("#divOne").before($("#divTwo"));
-
-
-// const swap = function (left, right) {
-//     const parentA = left.parentNode;
-//     const siblingA = left.nextSibling === right ? left: left.nextSibling;
-
-//     // Move `left` to before the `nodeB`
-//     nodeB.parentNode.insertBefore(left, right);
-
-//     // Move `nodeB` to before the sibling of `left`
-//     parentA.insertBefore(right, siblingA);
-// };
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 300;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
 
 var node1 = document.getElementById("left");
 var node2 = document.getElementById("right");

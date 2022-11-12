@@ -83,6 +83,7 @@ h4 {
   background-color: #f9f37d;
 }
 .frame{
+  
   display: flex;
   /* background-color: #d2c10b; */
   position: relative;
@@ -100,7 +101,17 @@ h4 {
       transform:rotate(360deg);
   }
 }
+.reveal{
+  position: relative;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 
 
@@ -861,16 +872,24 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
 .star{
   position:absolute ;
   width: 40%;
+  top: 32%;
   height: auto;
   z-index: 1;
   animation: spin 10s infinite linear;
-  
+
 
 }
 .sumamry_pic{
   z-index: 2;
-  margin-top: 15%;
+  margin-top: 26%;
   width: 60%;
+}
+.tearmarks{
+  width: 80vw;
+  height: auto;
+  position: relative;
+  
+
 }
 
 
