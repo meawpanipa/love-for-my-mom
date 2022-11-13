@@ -61,27 +61,7 @@ h4 {
   text-align: center;
   color: #000000;
 }
-.button {
-  background-color: #EDE646;
-  border: none;
-  color: black;
-  padding: 1% 2%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50px;
-  font-size: 40%;
-  font-family: 'Krub';
-  position: absolute;
-  z-index: 3;
-  
-}
 
-.button:hover {
-  background-color: #f9f37d;
-}
 .frame{
   
   display: flex;
@@ -112,7 +92,10 @@ h4 {
   transform: translateY(0);
   opacity: 1;
 }
-
+.left{
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 /*----------------mobile---------------*/
@@ -468,8 +451,8 @@ ul li:hover {
   align-items: center;
   text-align: center;
 
-  height: 100%;
-  width: 50vw;
+  
+  width: 100vw;
 
 }
 
@@ -517,11 +500,54 @@ ul li:hover {
 
   float: right;
 }
-#sec3{
+.tearmarks{
+  width: 120vw;
+  left: -10%;
+  position: relative;
+  
+
+}
+.star{
+  position:absolute ;
+  width: 67%;
+  top: -1%;
+  height: auto;
+  z-index: 1;
+  animation: spin 10s infinite linear;
+
+
+}
+.sumamry_pic{
+  z-index: 2;
+  
+  width: 100%;
+}
+#sec6{
+  background: rgb(213,213,213);
+background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95%);
+
+}
+.button {
+  background-color: #EDE646;
+  border: none;
+  color: black;
+  padding: 2% 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 4vw;
+  font-family: 'Krub';
+  position: absolute;
+  z-index: 3;
   
 }
 
-
+.button:hover {
+  background-color: #f9f37d;
+}
 /*-------desktop--------*/
 /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
 @media screen and (min-width: 800px) {
@@ -823,7 +849,7 @@ ul li:hover {
     height: auto;
   }
   #teacher3 {
-    width: 100%;
+    width: 100vw;
     height: auto;
   }
 
@@ -886,10 +912,32 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
 }
 .tearmarks{
   width: 80vw;
+  left: 0%;
   height: auto;
   position: relative;
   
 
+}
+.button {
+  background-color: #EDE646;
+  border: none;
+  color: black;
+  padding: 1% 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 40%;
+  font-family: 'Krub';
+  position: absolute;
+  z-index: 3;
+  
+}
+
+.button:hover {
+  background-color: #f9f37d;
 }
 
 
