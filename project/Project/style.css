@@ -222,6 +222,77 @@ body {
     cursor: pointer;
   }
   
+  #text1{
+        font-size: 20px;
+        margin-top: 10%;
+        position: relative;
+    }
+    #pb{
+        font-size: 70%;
+        margin-left: 5%;
+        position: relative;
+    }
+    #pb2{
+        font-size: 70%;
+        margin-top: 6%;
+        margin-left: 5%;
+        position: relative;
+    }
+    #pic1{
+      width: 100%;
+      height: auto;
+      position: absolute;
+    }
+    #pic2{
+      width: 35%;
+      height: 10%;
+      margin-left: 64%;
+      margin-top: 15%;
+      position: absolute;
+    }
+  #text2{
+        font-size: 20px;
+        margin-top: 60%;
+        position: relative;
+    }
+  #pb3{
+        font-size: 70%;
+        margin-left: 5%;
+        position: relative;
+    }
+    #pb4{
+        font-size: 70%;
+        margin-top: 5%;
+        margin-left: 5%;
+        position: relative;
+    }
+    #pb5{
+        font-size: 70%;
+        margin-top: 5%;
+        margin-left: 5%;
+        position: relative;
+    }
+    #pic3{
+      width: 50%;
+      height: auto;
+      margin-left: -70%;
+      margin-top: 10%;
+      position: absolute;
+    }
+    #pic4{
+      width: 100%;
+      height: auto;
+      margin-top: 15%;
+      margin-left: -77%;
+      position: absolute;
+    }
+    #pic5{
+      width: 20%;
+      height: auto;
+      margin-top: 50%;
+      margin-left: 65%;
+      position: absolute;
+    }
   /*-------desktop--------*/
   /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
   @media screen and (min-width: 890px) {
@@ -396,6 +467,7 @@ body {
       width: 25%;
       height: 30%;
       margin-left: 75%;
+      margin-top: -1%;
       position: absolute;
     }
   #text2{
