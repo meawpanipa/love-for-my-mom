@@ -221,7 +221,12 @@ body {
     transition: opacity 2s;
     cursor: pointer;
   }
-  
+  .container{
+        width: 60%;
+        height: auto;
+        margin-left: 6%;
+        position: relative;
+    }
   #text1{
         font-size: 20px;
         margin-top: 10%;
@@ -242,20 +247,29 @@ body {
       width: 100%;
       height: auto;
       position: absolute;
+      z-index: 15;
     }
     #pic2{
       width: 35%;
-      height: 10%;
+      height: auto;
       margin-left: 64%;
-      margin-top: 15%;
+      margin-top: 12%;
       position: absolute;
+      z-index: 16;
     }
-  #text2{
+    .container2{
+        width: 60%;
+        height: auto;
+        margin-left: 6%;
+        margin-top: 70%;
+        position: relative;
+    }
+    #text2{
         font-size: 20px;
         margin-top: 60%;
         position: relative;
     }
-  #pb3{
+    #pb3{
         font-size: 70%;
         margin-left: 5%;
         position: relative;
@@ -275,23 +289,51 @@ body {
     #pic3{
       width: 50%;
       height: auto;
-      margin-left: -70%;
+      margin-left: 0%;
       margin-top: 10%;
       position: absolute;
+      z-index: 17;
     }
     #pic4{
       width: 100%;
       height: auto;
       margin-top: 15%;
-      margin-left: -77%;
+      margin-left: 0%;
       position: absolute;
+      z-index: 16;
     }
     #pic5{
       width: 20%;
       height: auto;
-      margin-top: 50%;
-      margin-left: 65%;
+      margin-top: 45%;
+      margin-left: 72%;
       position: absolute;
+      z-index: 16;
+    }
+    .container3{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      background-image: linear-gradient(#f9d60c, #e0e0b6, #d8d8d8);
+      border-top-right-radius: 10%;
+      border-top-left-radius: 10%;
+    }
+    .line {
+    position: absolute;
+    top: 40%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 0.5%;
+    height: 100%;
+    background-color: #E94A4A;
+    z-index: 10;
+    }
+    .container5{
+      width: 20%;
+      height: auto;
+      position: relative;
+      top: 80px;
+      left: 78%;
     }
   /*-------desktop--------*/
   /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
@@ -435,6 +477,7 @@ body {
       cursor: pointer;
     }
     .container{
+        width: 80%;
         position: relative;
     }
     .logo{
@@ -442,40 +485,48 @@ body {
     }
     #text1{
         font-size: 20px;
-        margin-top: 10%;
+        margin-top: 15%;
         position: relative;
     }
     #pb{
-        font-size: 30px;
-        margin-left: 30%;
+        font-size: 20px;
+        margin-left: 28%;
         position: relative;
     }
     #pb2{
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 40px;
-        margin-left: 30%;
+        margin-left: 28%;
         position: relative;
     }
     #pic1{
       width: 100%;
-      height: 70%;
+      height: auto;
       margin-top: -20%;
       margin-left: 0px;
       position: absolute;
+      z-index: 15;
     }
     #pic2{
       width: 25%;
-      height: 30%;
+      height: auto;
       margin-left: 75%;
       margin-top: -1%;
       position: absolute;
+      z-index: 16;
     }
-  #text2{
+    .container2{
+      width: 80%;
+      margin-top: 30%;
+      position: relative;
+      z-index: 16;
+    }
+    #text2{
         font-size: 20px;
         margin-top: 400px;
         position: relative;
     }
-  #pb3{
+    #pb3{
         font-size: 18px;
         margin-top: 100px;
         margin-left: 20%;
@@ -495,22 +546,49 @@ body {
     }
     #pic3{
       width: 30%;
-      height: 45%;
-      margin-left: -60%;
+      height: auto;
+      margin-top: 0%;
+      margin-left: 17%;
       position: absolute;
     }
     #pic4{
       width: 100%;
-      height: 40%;
-      margin-top: 10%;
-      margin-left: -77%;
+      height: auto;
+      margin-top: 5%;
+      margin-left: 0%;
       position: absolute;
+      z-index: 16;
     }
     #pic5{
-      width: 8%;
-      height: 15%;
+      width: 10%;
+      height: auto;
       margin-top: 4%;
       margin-left: 7%;
       position: absolute;
+    }
+    .container3{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      background-image: linear-gradient(#f9d60c, #e0e0b6, #d8d8d8);
+      border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+    }
+    .line {
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 0.5%;
+    height: 150%;
+    background-color: #E94A4A;
+    z-index: 10;
+    }
+    .container5{
+      width: 20%;
+      height: auto;
+      position: relative;
+      top: 250px;
+      left: 73%;
     }
   }
