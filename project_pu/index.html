@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Page</title>
+    <link rel="stylesheet" href="sage_style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Kodchasan' rel='stylesheet'>
@@ -18,36 +19,75 @@
                 <i class="fas fa-bars"></i>
             </span>
             <div class="logo">
-                <h1>logo</h1>
+                <div id="icon">
+                    <a href="index.html">
+                        <img id="icon"
+                            src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/Logo/LOGO%20WEB-White.png">
+                        </image>
+                    </a>
+                </div>
             </div>
             <ul id="js-menu">
-                <li><a href="page1.html">หน้าแรก</a></li>
-                <li><a href="history.html">ประวัติการสัก</a></li>
-                <li><a href="#">ค่านิยมในสังคม</a></li>
+                <li><a href="Page1-New.html">หน้าแรก</a></li>
+                <li><a href="index-history.html">ประวัติการสัก</a></li>
+                <li><a href="card.html">ค่านิยมในสังคม</a></li>
                 <li><a href="#">อาจารย์สักคนสำคัญ</a></li>
 
             </ul>
         </nav>
     </div>
-    <div class="container" style="overflow: hidden;">
-        <div class="dot" id="note_aura" data-item-status="close"></div>
+
+
+    <section>
+
+        <!-- <div class="dot" id="note_aura" data-item-status="close"></div>
         <div class="wrap">
-            <img id="chest" src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/%E0%B8%AB%E0%B8%B5%E0%B8%9A1-min.png">
-            
+            <img id="chest" data-item-status="open"
+                src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/%E0%B8%AB%E0%B8%B5%E0%B8%9A1-min.png">
+            <img id="chest_open" data-item-status="close"
+                src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/%E0%B8%AB%E0%B8%B5%E0%B8%9A3-min.png">
             <img id="note" data-item-status="close"
                 src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%94%E0%B8%82%E0%B9%88%E0%B8%AD%E0%B8%A2.png">
-            
-                <img id="note-open" data-item-status="close" onclick="changePage()"
+
+            <img id="note-open" data-item-status="close" onclick="changePage()"
                 src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%94%E0%B8%82%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%A1%E0%B8%B5%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%A3-min.png">
+            <div class="res-circle" data-item-status="close" id="click_circle">
+                <div class="circle-txt">คลิก</div>
+            </div>
+
+
+        </div>
+        <h3 id="intro" class="open-text" data-item-status="close">คลิกหีบเพื่อเปิด</h3> -->
+    </section>
+    <section style="background-color: transparent;">
+        <div class="dot" id="note_aura" data-item-status="close"></div>
+        <div class="block" style="height: 90vh;">
+            
+            <div class="wrap" style="top: 0%;">
+                <img id="chest" data-item-status="open"
+                    src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/%E0%B8%AB%E0%B8%B5%E0%B8%9A1-min.png">
+                <img id="chest_open" data-item-status="close"
+                    src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/%E0%B8%AB%E0%B8%B5%E0%B8%9A3-min.png">
+                <img id="note" data-item-status="close"
+                    src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%94%E0%B8%82%E0%B9%88%E0%B8%AD%E0%B8%A2.png">
+    
+                <img id="note-open" data-item-status="close" onclick="changePage()"
+                    src="https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%94%E0%B8%82%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%A1%E0%B8%B5%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%A3-min.png">
                 <div class="res-circle" data-item-status="close" id="click_circle">
                     <div class="circle-txt">คลิก</div>
-                  </div>
-                  
-                  
-        </div>
-        <h3 id="intro" class="open-text" data-item-status="close">คลิกหีบเพื่อเปิด</h3>
-    </div>
+                </div>
     
+                <h3 id="intro" class="open-text" data-item-status="close">คลิกหีบเพื่อเปิด</h3>
+            </div>
+            
+            
+        </div>
+
+
+
+
+    </section>
+
     <script src="script.js"></script>
 </body>
 

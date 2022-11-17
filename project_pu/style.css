@@ -1,4 +1,5 @@
 body {
+  position: relative;
   background-color: #D8D8D8;
   height: 100vh;
   /*สูงเต็มหน้าเว็บ*/
@@ -27,6 +28,7 @@ body[data-item-status="open"] {
   transition: all 2s;
 }
 
+
 /* @keyframes kraprip{
   0% {
     opacity: 0.5;
@@ -40,7 +42,6 @@ body[data-item-status="open"] {
     opacity: 0.5;
     scale: 0.9;
   }
-
 } */
 @keyframes fade{
   from{ opacity: 0.9;
@@ -95,8 +96,17 @@ nav {
 
 
 .logo {
-  margin: 5px 0 5px 0;
-  /*border: 1px solid red;*/
+  position: relative;
+  width: auto;
+  height: 100%;
+  padding: 0%;
+  display: none;
+}
+#icon{
+  width: auto;
+  height: 6vh;
+  position: absolute;
+  margin-top: 1%;
 }
 
 ul {
@@ -140,7 +150,7 @@ ul li:hover {
 
 #chest {
   width: 70%;
-  margin-top: 10vh;
+  
   cursor: pointer;
   z-index: 1;
 }
@@ -153,10 +163,11 @@ ul li:hover {
   } */
 
 .wrap {
+  
   display: flex;
   position: relative;
   justify-content: center;
-  margin-top: 20%;
+  
 
 }
 
@@ -171,13 +182,7 @@ ul li:hover {
 }
 
 .open-text[data-item-status="open"] {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  margin-top: 20 px;
-  color: black;
-  transition: all 1s;
-  font-size: 20px;
+  opacity: 0;
 }
 
 #note[data-item-status="close"] {
@@ -267,15 +272,15 @@ ul li:hover {
 /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
 @media screen and (min-width: 800px) {
   nav {
-    height: 80px;
+    height: 50px;
     flex-direction: row;
 
   }
 
   .logo {
-    padding-left: 50px;
     margin: 0;
     width: 20%;
+    display: flex;
   }
 
   ul {
@@ -303,27 +308,47 @@ ul li:hover {
   }
 
   .wrap {
-    display: flex;
     position: relative;
-    justify-content: center;
- 
-    margin-top: 0%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    
+    
   }
 
-  #chest {
-    width: 25%;
-    margin-top: 5%;
+  #chest[data-item-status="open"] {
+    width: 35%;
+    top: 0%;
     z-index: 1;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+    
+  }
+  #chest_open[data-item-status="open"] {
+    width: 35%;
+    
+    z-index: 1;
+    
+    cursor: pointer;
+    position: relative;
+    
+  }
+  #chest[data-item-status="close"]{
+   
+    display: none;
+  }
+  #chest_open[data-item-status="close"]{
+    
+    display: none;
   }
 
   #note[data-item-status="close"] {
-    width: 350px;
-    height: 150px;
-    margin-top: 350px;
+    
+    
     position: absolute;
-    display: block;
+    display: none;
+   
     opacity: 0;
     z-index: 0;
    
@@ -332,9 +357,9 @@ ul li:hover {
 
   #note[data-item-status="open"] {
  
-    height: 26%;
-    width: 22%;
-    margin-top: 18%;
+    height: 29%;
+    width: 29%;
+    margin-top: 8%;
     position: absolute;
     display: block;
     opacity: 1;
@@ -346,7 +371,7 @@ ul li:hover {
   #note[data-item-status="click"] {
     width: 40%;
     height: 100%;
-    margin-top: 5%;
+    
     position: absolute;
     display: block;
     opacity: 1;
@@ -371,7 +396,7 @@ ul li:hover {
   #note-open[data-item-status="close"] {
     width: 40%;
     height: 100%;
-    margin-top: 5%;
+    
     position: absolute;
     display: block;
     opacity: 0;
@@ -380,9 +405,9 @@ ul li:hover {
 
   }
   #note-open[data-item-status="open"] {
-    width: 40%;
-    height: 100%;
-    margin-top: 5%;
+    width: 35%;
+    height: auto;
+    
     position: absolute;
     display: block;
     opacity: 1;
@@ -395,19 +420,20 @@ ul li:hover {
 
   .open-text[data-item-status="close"] {
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
-    margin-top: 20 px;
+    top: 90%;
     color: white;
     font-size: 20px;
-
+    z-index: 10;
   }
 
   .open-text[data-item-status="open"] {
-    display: flex;
-    position: relative;
+    display: none;
+    position: absolute;
     justify-content: center;
     margin-top: 20 px;
+    z-index: 10;
     color: black;
     transition: all 1s;
     font-size: 20px;
@@ -416,7 +442,7 @@ ul li:hover {
       
     width: 100px;
     border-radius: 50%;
-    margin-top: 380px;
+    
    
     background: #866E17;
     
@@ -432,7 +458,7 @@ ul li:hover {
     
     width: 5.5%;
     border-radius: 50%;
-    margin-top: 20%;
+    margin-top: 8.5%;
    
     background: #866E17;
     opacity: 0.7;
@@ -456,9 +482,10 @@ ul li:hover {
     height: 80%;
     border-radius: 50%;
    margin-left: 28vw;
-    margin-top: 5vh;
+    margin-top: 10vh;
     opacity: 50%;
     animation: 5s aura infinite;
+    
   }
 
 .dot:before {
