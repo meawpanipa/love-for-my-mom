@@ -265,7 +265,7 @@ body {
         position: relative;
     }
     #text2{
-        font-size: 20px;
+        font-size: 70%;
         margin-top: 60%;
         position: relative;
     }
@@ -489,13 +489,13 @@ body {
         position: relative;
     }
     #pb{
-        font-size: 20px;
+        font-size: 90%;
         margin-left: 28%;
         position: relative;
     }
     #pb2{
-        font-size: 16px;
-        margin-top: 40px;
+        font-size: 90%;
+        margin-top: 2%;
         margin-left: 28%;
         position: relative;
     }
@@ -503,7 +503,7 @@ body {
       width: 100%;
       height: auto;
       margin-top: -20%;
-      margin-left: 0px;
+      margin-left: 0%;
       position: absolute;
       z-index: 15;
     }
@@ -522,24 +522,24 @@ body {
       z-index: 16;
     }
     #text2{
-        font-size: 20px;
+        font-size: 90%;
         margin-top: 400px;
         position: relative;
     }
     #pb3{
-        font-size: 18px;
+        font-size: 90%;
         margin-top: 100px;
         margin-left: 20%;
         position: relative;
     }
     #pb4{
-        font-size: 18px;
+        font-size: 90%;
         margin-top: 40px;
         margin-left: 20%;
         position: relative;
     }
     #pb5{
-        font-size: 18px;
+        font-size: 90%;
         margin-top: 40px;
         margin-left: 50%;
         position: relative;
