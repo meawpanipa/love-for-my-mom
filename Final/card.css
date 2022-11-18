@@ -157,15 +157,14 @@ body {
     display: flex;
   }
   .block {
-    position: relative;
     display: flex;
-    text-align: center;
-    /* background: rgb(168, 28, 28); */
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    position: relative;
+    /* background-color: #2f5119; */
     justify-content: center;
-    margin-top: 7vh;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    text-align: center;
   
   }
   
@@ -206,8 +205,8 @@ body {
   }
   .title-text {
     font-family: 'Krub';
-    font-weight: 900;
-    text-shadow: 2px 2px 2px #000000;
+    font-weight: 800;
+    /* text-shadow: 2px 2px 2px #000000; */
     font-size: 6vw;
     margin-top: 5vh;
   }
@@ -234,9 +233,9 @@ body {
     transition: 0.3s;
     width: 70vw;
     height: 40vh;
-  
     z-index: 2;
   }
+
   
   
   .card-block[data-item-status="close"] {
@@ -360,7 +359,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
     
   }
@@ -433,7 +432,6 @@ body {
       margin-right: auto;
       width: 100%;
       justify-content: center;
-      margin-top: 5vh;
   
     }
   
@@ -444,7 +442,6 @@ body {
       /* background: rgb(0, 82, 197); */
       margin-left: auto;
       margin-right: auto;
-      margin-top:-1%;
       width: 100%;
       justify-content: center;
       
@@ -457,7 +454,6 @@ body {
       /* background: rgb(2, 125, 45); */
       margin-left: auto;
       margin-right: auto;
-      margin-top: 5%;
       width: 100%;
       justify-content: center;
   
@@ -505,23 +501,20 @@ body {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.7);
       z-index: 2;
       
     }
     .sub_title{
       font-size: 1.5vw;
-  
         padding: 0%;
       
     }
     .card {
       position: relative;
-    
       transition: 0.3s;
       width: auto;
       height: 50%;
-    
       z-index: 2;
     }
     
@@ -535,7 +528,7 @@ body {
       margin-right: auto;
       width: 100%;
       justify-content: center;
-      margin-top: 7vh;
+      /* margin-top: 1vh; */
     
     }
     
@@ -547,7 +540,7 @@ body {
       width: 100%;
       height: 100%;
       justify-content: center;
-      padding-top: 3%;
+      top: -5%;
       z-index: 2;
       
     }
@@ -961,5 +954,72 @@ body {
         margin-top: -13%;
         position: relative;
     }
-  
+    .Titlekaniyom{
+      width: 95%;
+      display: flex;
+      position: relative;
+      left: 4%;
+  }
+#north_pb{
+    font-size: 100%;
+    margin-top: 15%;
+    text-align: center;
+    position: relative;
+}
+#north_pb2{
+    font-size: 70%;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+}
+#north1{
+  width: 70%;
+  height: 10%;
+  margin-top: 30%;
+  margin-left: 25%;
+  position: absolute;
+}
+#north2{
+  width: 100%;
+  height: 50%;
+  margin-top: 130px;
+  position: absolute;
+}
+#north_pb3{
+    font-size: 70%;
+    margin-top: 70%;
+    text-align: center;
+    position: relative;
+}
+#north_pb4{
+    font-size: 70%;
+    margin-top: 10%;
+    text-align: center;
+    position: relative;
+}
+#north3{
+  width: 100%;
+  height: 20%;
+  margin-top: -10%; 
+  position: absolute;
+}
+#north4{
+  width: 100%;
+  height: 30%;
+  margin-top: -65%;
+  position: absolute;
+}
+#north5{
+  width: 100%;
+  height: 26%;
+  margin-top: 10%;
+  position: absolute;
+}
+#north6{
+  width: 20%;
+  height: 15%;
+  margin-top: 20px;
+  margin-left: 5%;
+  position: absolute;
+}
   }

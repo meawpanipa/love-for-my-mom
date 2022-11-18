@@ -255,7 +255,6 @@ ul li:hover {
 
 .pan_img {
   position: relative;
-
   width: 60%;
   height: auto;
   z-index: 1;
@@ -950,7 +949,12 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
 .button:hover {
   background-color: #f9f37d;
 }
-
+.TitleTeacher{
+  width: 100%;
+  display: flex;
+  position: relative;
+  /* left: 4%; */
+}
 
 
 }
