@@ -1,0 +1,1029 @@
+body {
+    background-color: #D8D8D8;
+    height: 100vh;
+    /*สูงเต็มหน้าเว็บ*/
+    font-family: 'Kodchasan', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  
+  
+  section {
+    position: relative;
+    height: auto;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #D8D8D8;
+    /*background-color: yellow;*/
+  }
+  
+  .container {
+    position: relative;
+    display: inline;
+    background-color: antiquewhite;
+  
+  }
+  
+  /* ที่มาของสัก สันนิษฐานมาจากอักษรขอม */
+  
+  h2 {
+    font-family: 'Krub';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000000;
+  }
+  
+  
+  
+  h3 {
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 600;
+  
+    line-height: 160%;
+    /* or 32px */
+    color: #000000;
+    mix-blend-mode: normal;
+  }
+  
+  
+  h4 {
+    position: absolute;
+    width: 808px;
+    height: 68px;
+    left: 555px;
+    top: 3060px;
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  /*nav*/
+  
+  
+  /*----------------mobile---------------*/
+  .wrap{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    width: auto;
+    
+  }
+  nav {
+    background-color: #525252;
+    height: auto;
+    display: flex;
+    /*ให้ขึ้นมาเรียงกัน*/
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .sticky {
+    position: fixed;
+    width: 100%;
+  }
+  
+  .nav-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .logo {
+    position: relative;
+    width: auto;
+    height: 100%;
+    padding: 0%;
+    display: none;
+  }
+  #icon{
+    width: auto;
+    height: 6vh;
+    position: absolute;
+    margin-top: 1%;
+  }
+  
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: none;
+    /*เพื่อไม่เเสดงผลเมนู พอกดเเล้วค่อยเเสดง*/
+  }
+  
+  ul li {
+    list-style-type: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+    border-bottom-width: 1px;
+    padding: 5px 50px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul li:first-child {
+    margin-top: 0;
+  }
+  
+  ul li:hover {
+    opacity: 0.5;
+  }
+  
+  .active {
+    /*เมื่อมีการเรียกใช้ตรงtoggle ที่เป็นแฮมเบอเกอร์*/
+    display: flex;
+  }
+  .block {
+    display: flex;
+    position: relative;
+    /* background-color: #2f5119; */
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+  .block2 {
+    position: relative;
+    display: flex;
+    text-align: center;
+    /* background: rgb(0, 82, 197); */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+    width: 100%;
+    justify-content: center;
+    
+  }
+  
+  .block3 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    /* background: rgb(2, 125, 45); */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 40vh;
+  }
+  
+  .btn {
+    width: 100%;
+    /* background-color: rgb(235, 187, 11); */
+    position: relative;
+    display: inline-block;
+    height: 5vw;
+  
+  
+  }
+  .title-text {
+    font-family: 'Krub';
+    font-weight: 800;
+    /* text-shadow: 2px 2px 2px #000000; */
+    font-size: 6vw;
+    margin-top: 5vh;
+  }
+  .sub_title{
+    font-size: 3vw;
+    margin-top: 2vh;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+  }
+  .button-image {
+    
+    width: 50%;
+    margin: 0%;
+    margin-top: 0%;
+    margin-bottom: 5vh;
+    min-width: 300px;
+    cursor: pointer;
+  }
+  .card {
+    position: relative;
+  
+    transition: 0.3s;
+    width: 70vw;
+    height: 40vh;
+    z-index: 2;
+  }
+
+  
+  
+  .card-block[data-item-status="close"] {
+    position: absolute;
+    display: none;
+    text-align: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 7vh;
+  
+  }
+  
+  .card-block[data-item-status="open"] {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-left: 0%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 10vh;
+    z-index: 2;
+    
+  }
+  
+  .card_top {
+    background-color: white;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .card_info {
+    background-color: #E3BF3F;
+    color: white;
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 100%;
+  
+  }
+  
+  
+  
+  button {
+  
+    border-color: white;
+    padding: 0.3em;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(222, 222, 222);
+    opacity: 0.7;
+    position: absolute;
+    margin-left: 55%;
+    font-size: 200%;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+  
+  
+  button:hover {
+    border: 2px solid rgb(141, 141, 141);
+    background-color: rgb(141, 141, 141);
+    color: #ffffff;
+  }
+  
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid rgb(255, 255, 255);
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: -15vw;
+    cursor: pointer;
+  }
+  
+  .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid rgb(255, 255, 255);
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 72vw;
+    cursor: pointer;
+  }
+  #tatto {
+    width: auto;
+    height: 100%;
+    margin-top: 6%;
+    padding: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+  }
+  
+  .tatto_name {
+    position: absolute;
+      width: 100%;
+      font-size: 3vw;
+      margin-top: -12%;
+      font-weight: 600;
+      color: white;
+  }
+  
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    
+  }
+  #tatto_type{
+    font-size: 4vw;
+  }
+  #card_description{
+    font-size: 2.6vw;
+  }
+  
+  
+  
+  /*-------desktop--------*/
+  /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
+  @media screen and (min-width: 800px) {
+    nav {
+      height: 50px;
+      flex-direction: row;
+    }
+  
+    .logo {
+      margin: 0;
+      width: 20%;
+      display: flex;
+    }
+  
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      /*ชิดขวา*/
+      width: 80%;
+      flex-direction: row;
+      
+    }
+  
+    ul li {
+      display: inline-block;
+      margin: 0 3vw 0 0;
+      text-align: left;
+      border-bottom-style: none;
+      padding: 0;
+      font-size: 1vw;
+    }
+  
+    .nav-toggle {
+      display: none;
+      /*ไม่แสดงแฮมเบอเกอร์*/
+    }
+    .title-text {
+      font-family: 'Krub';
+      font-weight: 900;
+      text-shadow: 2px 2px 2px #000000;
+      font-size: clamp(1rem, -0.875rem + 8.333vw, 4vw);
+    }
+    .wrap{
+      justify-content: center;
+      display: flex;
+      position: relative;
+      width: auto;
+      
+    }
+   
+  
+    .block {
+      position: relative;
+      display: flex;
+      text-align: center;
+      /* background: rgb(168, 28, 28); */
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      justify-content: center;
+  
+    }
+  
+    .block2 {
+      position: relative;
+      display: flex;
+      text-align: center;
+      /* background: rgb(0, 82, 197); */
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      justify-content: center;
+      
+    }
+  
+    .block3 {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      /* background: rgb(2, 125, 45); */
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      justify-content: center;
+  
+    }
+    .block4 {
+      position: relative;
+      display: flex;
+      text-align: center;
+      /* background: rgb(168, 28, 28); */
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      justify-content: center;
+      
+  
+    }
+  
+    .btn {
+      width: 100%;
+      /* background-color: rgb(235, 187, 11); */
+      position: relative;
+      display: inline-block;
+      height: 5vw;
+  
+  
+    }
+  
+  
+  
+    .button-image {
+      width: 31%;
+      margin: 3%;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      min-width: 350px;
+      cursor: pointer;
+    }
+  
+    #overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 2;
+      
+    }
+    .sub_title{
+      font-size: 1.5vw;
+        padding: 0%;
+      
+    }
+    .card {
+      position: relative;
+      transition: 0.3s;
+      width: auto;
+      height: 50%;
+      z-index: 2;
+    }
+    
+    
+    .card-block[data-item-status="close"] {
+      position: absolute;
+      display: none;
+      text-align: center;
+      background: rgb(96, 28, 168);
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      justify-content: center;
+      /* margin-top: 1vh; */
+    
+    }
+    
+    .card-block[data-item-status="open"] {
+      position: absolute;
+      display: flex;
+      text-align: center;
+      margin-left: 0%;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      top: -5%;
+      z-index: 2;
+      
+    }
+    
+    .card_top {
+      background-color: white;
+      width: 25vw;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      margin: auto;
+      position: relative;
+      max-width: 25vw;
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .card_info {
+      background-color: #E3BF3F;
+      color: white;
+      width: 25vw;
+      height: auto;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      margin: auto;
+      max-width: 25vw;
+    
+    }
+    
+    
+    
+    
+    button {
+    
+      border-color: white;
+      padding: 0.3em;
+      width: 30px;
+      height: 30px;
+      border: 2px solid rgb(222, 222, 222);
+      opacity: 0.7;
+      position: absolute;
+      margin-left: 55%;
+      font-size: 100%;
+      cursor: pointer;
+    
+      border-radius: 50%;
+    }
+    
+    
+    button:hover {
+      border: 2px solid rgb(141, 141, 141);
+      background-color: rgb(141, 141, 141);
+      color: #ffffff;
+    }
+    
+    .triangle-left {
+      width: 0;
+      height: 0;
+      border-top: 25% solid transparent;
+      border-right: 50% solid rgb(255, 255, 255);
+      border-bottom: 25% solid transparent;
+      position: absolute;
+      margin-top: 50%;
+      margin-left: -24%;
+      cursor: pointer;
+    }
+    
+    .triangle-right {
+      width: 0;
+      height: 0;
+      border-top: 25% solid transparent;
+      border-left: 50% solid rgb(255, 255, 255);
+      border-bottom: 25% solid transparent;
+      position: absolute;
+      margin-top: 50%;
+      margin-left: 105%;
+      cursor: pointer;
+    }
+    #tatto {
+      width: 20vw;
+      height: auto;
+      margin-top: 6%;
+      position: relative;
+      padding-bottom: 0%;
+      padding-top: 0%;
+    }
+    
+    .tatto_name {
+      position: absolute;
+      width: auto;
+      font-size: 60%;
+      font-weight: 600;
+      color: white;
+      margin-top: -13%;
+    }
+    #tatto_type{
+      font-size: 20px;
+      margin-top:-5%;
+    }
+    #card_description{
+      font-size: 0.9vw;
+    }
+    .sec1-con{
+      display: flex;
+      position: relative;
+      max-width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      /*justify-content:space-between;*/
+    }
+    
+    .sec1-img-center{
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    }
+    .sec1-img-center img{
+    height: 100%;
+    }
+    .sec1-img-left{
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 0%;
+    top:0%;
+    }
+    .sec1-img-left img{
+    max-width: 100%;
+    height: 60vh;
+    }
+    .sec1-img-right{
+    /* border: 1px solid red; */
+    position: absolute;
+    top:50%;
+    left: 30%;
+    }
+    .sec1-img-right img{
+    max-width: 100%;
+    }
+    
+    .sec2-con img{
+    max-width: 100%;
+    margin-top: auto;
+    }
+    #fish{
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    margin-left: 25%;
+    width: 70%;
+    }
+    .sec2-con{
+    display: flex;
+    position: relative;
+    height: 100%;
+    }
+    .sec2-top{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5rem;
+    position: absolute;
+    /* border:1px solid green; */
+    padding-top: 3%;
+    /* flex-wrap: wrap; เอาไว้ใช้ในโมบาย*/
+    }
+    #sec2-map{
+      max-width: 100%;
+    }
+    .sec2-info-1 h2{
+    text-align: center;
+    
+    }
+    .sec2-info-2 p{
+    font-size: 1vw;
+    line-height: 1.5;
+    /* margin: 0; */
+    /* border: 1px solid red; */
+    }
+    /*.sec2-info-2 {
+    /* border: 1px solid red; */
+    /* width: 150%;
+    }*/
+    
+    
+    .reveal {
+    /* position: relative; */
+    opacity: 0;
+    }
+    
+    .reveal.active {
+    opacity: 1;
+    }
+    
+    .active.fade-right {
+    animation: fade-right 1s ease-in;
+    }
+    
+    @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    }
+    
+    .active.cloud-left{
+    animation: cloud-left 1s ease-out 1s 1 alternate forwards;
+    }
+    .active.fade-bottom {
+      animation: fade-bottom 1s ease-in;
+    }    
+    @keyframes fade-bottom {
+      0% {
+        transform: translateY(20%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes cloud-left {
+    0% {
+      transform: translateX(0);
+    }
+    
+    100% {
+      transform: translateX(-50%);
+    }
+    }
+    .active.cloud-right{
+    animation: cloud-right 1s ease-out 1s 1 reverse forwards;
+    /* overflow: hidden; */
+    }
+    
+    @keyframes cloud-right {
+    0% {
+      transform: translateX(60%);
+    }
+    
+    100% {
+      transform: translateX(0%);
+    }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*nav*/
+    
+    
+    /*----------------mobile---------------*/
+    nav {
+      background-color: #525252;
+      height: auto;
+      display: flex; /*ให้ขึ้นมาเรียงกัน*/
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex-direction: column;
+      color: #fff;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .sticky {
+      position: fixed;
+      width: 100%;
+    }
+    .nav-toggle{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .logo{
+      margin: 40px 0 40px 0;
+      /*border: 1px solid red;*/
+    }
+    ul{
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 0;
+      display: none; /*เพื่อไม่เเสดงผลเมนู พอกดเเล้วค่อยเเสดง*/
+    }
+    ul li{
+      list-style-type: none;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 20px;
+      text-align: center;
+      border-bottom-style: solid;
+      border-bottom-color: #fff;
+      border-bottom-width: 1px;
+      padding: 5px 50px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    ul li:first-child{
+      margin-top: 0;
+    }
+    ul li:hover{
+      opacity: 0.5;
+    }
+    .active{ /*เมื่อมีการเรียกใช้ตรงtoggle ที่เป็นแฮมเบอเกอร์*/
+      display: flex;
+    }
+    /*-------desktop--------*/
+    /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
+    @media screen and (min-width: 800px){
+      nav{
+          height: 50px;
+          flex-direction: row;
+      }
+      .logo{
+          padding-left: 50px;
+          margin: 0;
+          width: 20%;
+      }
+      ul{
+          display: flex;
+          justify-content: flex-end; /*ชิดขวา*/
+          width: 80%;
+          flex-direction: row;
+          
+      }
+      ul li {
+          display: inline-block;
+          margin: 0 70px 0 0;
+          text-align: left;
+          border-bottom-style: none;
+          padding: 0;
+          
+      }
+      .nav-toggle{
+          display: none; /*ไม่แสดงแฮมเบอเกอร์*/
+      }
+      .container {
+        position: relative;
+    }
+      #NorthE{
+        position: relative;
+        text-align: center;
+    }
+    .title{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-left: 15%;
+        margin-top: 20vh;
+    }
+    #headtext{
+        font-family: 'Krub';
+        font-weight: bold;
+        font-size: 350%;
+    }
+    .textblock{
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    #Describe{
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    #Quote{
+        position: relative;
+        display: flex;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        font-size: 130%;
+    }
+    #Map{
+        width: auto;
+        position: absolute;
+        margin-left: 3%;
+        margin-top: -2%;
+    }
+    #Mek{
+        width: 40vw;
+        height: 55vh;
+        position: absolute;
+        margin-left: 140vh;
+        margin-top: -12%;
+
+    }
+    #PicAll{
+        width: 170vh;
+        height: 80vh;
+        margin-left: 10%;
+        margin-top: -13%;
+        position: relative;
+    }
+    .Titlekaniyom{
+      width: 95%;
+      display: flex;
+      position: relative;
+      left: 4%;
+  }
+#north_pb{
+    font-size: 350%;
+    margin-top: 10%;
+    margin-left: 15%;
+    position: absolute;
+}
+#north_pb2{
+    font-size: 90%;
+    height: 70%;
+    margin-top: 24%;
+    text-align: center;
+    position: relative;
+}
+#north1{
+  width: 40%;
+  height: auto;
+  margin-top: 14%;
+  margin-left: 48%;
+  position: absolute;
+  z-index: 16;
+}
+#north2{
+  width: 30%;
+  height: auto;
+  margin-top: 18%;
+  margin-left: 35%;
+  position: absolute;
+}
+#north_pb3{
+    font-size: 90%;
+    margin-top: 10%;
+    text-align: center;
+    position: relative;
+}
+#north_pb4{
+    font-size: 90%;
+    height: 60%;
+    margin-top: 5%;
+    text-align: center;
+    position: relative;
+}
+#north3{
+  width: 100%;
+  height: auto;
+  margin-top: -30%; 
+  position: absolute;
+}
+#north4{
+  width: 40%;
+  height: auto;
+  margin-top: -40%;
+  margin-left: 30%;
+  position: absolute;
+}
+#north5{
+  width: 100%;
+  height: auto;
+  margin-top: -35%;
+  position: absolute;
+}
+#north6{
+  width: auto;
+  margin-top: 10%;
+  margin-left: 3%;
+  position: absolute;
+}
+  }
