@@ -33,6 +33,19 @@ function show_girl() {
   document.getElementById('btnID2').style.display = "none";
   document.getElementById('girl').style.display = "none";
 }
+function show_boy2() {
+ 
+  document.getElementById('boy4').style.display = "block";
+  document.getElementById('btnID3').style.display = "none";
+  document.getElementById('boy3').style.display = "none";
+}
+function show_girl2() {
+ 
+
+  document.getElementById('girl4').style.display = "block";
+  document.getElementById('btnID4').style.display = "none";
+  document.getElementById('girl3').style.display = "none";
+}
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
