@@ -569,12 +569,12 @@ ul li:hover {
 .sumamry_pic {
   z-index: 2;
 
-  width: 100%;
+  width: 95%;
 }
 
 #sec6 {
   background: rgb(213, 213, 213);
-  background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95%);
+  background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 20%, rgb(2, 0, 0) 100%);
 
 }
 
