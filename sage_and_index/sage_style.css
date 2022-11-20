@@ -1,6 +1,6 @@
 body {
   background-color: #D8D8D8;
-  height: 100vh;
+
   /*สูงเต็มหน้าเว็บ*/
   font-family: 'Kodchasan', sans-serif;
   margin: 0;
@@ -89,6 +89,7 @@ h4 {
   transform: translateY(20px);
   opacity: 0;
   transition: 1s all ease;
+  
 }
 
 .reveal.active {
@@ -502,7 +503,7 @@ ul li:hover {
 
 .title_text {
   display: block;
-  font-size: 3vh;
+  font-size: 30px;
   /* background-color: #D8D8D8; */
 
 }
@@ -612,6 +613,7 @@ footer {
   color: #E5E5E5;
   padding: 3%;
   font-size: 2vw;
+  line-height: 1.6;
 }
 
 /*-------desktop--------*/
@@ -846,7 +848,7 @@ footer {
     width: auto;
     height: 6vh;
     position: relative;
-    margin-top: 1%;
+    margin-top: 0%;
   }
 
   .wrapper {
@@ -951,14 +953,15 @@ footer {
     text-align: center;
     background-color: #505050;
     color: #E5E5E5;
-    padding: 3%;
-    font-size: 1.2vw;
+    padding: 2%;
+    font-size: 1vw;
+    line-height: 1.6;
   }
 
   #sec6 {
     background: rgb(213, 213, 213);
     background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95%);
-    height: 100%;
+   
   }
 
   .star {
