@@ -1,6 +1,6 @@
 body {
   background-color: #D8D8D8;
-  height: 100vh;
+
   /*สูงเต็มหน้าเว็บ*/
   font-family: 'Kodchasan', sans-serif;
   margin: 0;
@@ -16,7 +16,7 @@ section {
   justify-content: center;
   overflow: hidden;
   background-color: #D8D8D8;
-  
+
   /*background-color: yellow;*/
 }
 
@@ -62,52 +62,78 @@ h4 {
   color: #000000;
 }
 
-.frame{
-  
+.frame {
+
   display: flex;
   /* background-color: #d2c10b; */
   position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
   width: 100vw;
 }
+
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-.reveal{
+
+.reveal {
   position: relative;
   transform: translateY(20px);
   opacity: 0;
   transition: 1s all ease;
+  
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
-.left{
+
+.left {
   display: flex;
   justify-content: flex-end;
 }
-#yellowBG{
+
+#yellowBG {
   /* margin-top: 2%;
   border-top-right-radius: 50% 80%;
   border-top-left-radius: 50% 80%;
    */
-  background: rgb(227,191,63);
-background: linear-gradient(180deg, rgb(255, 237, 171) 0%, rgb(255, 237, 171) 85%, rgb(217, 217, 210) 100%);
-/* background: rgb(227,191,63);
+  background: rgb(227, 191, 63);
+  background: linear-gradient(180deg, rgb(255, 237, 171) 0%, rgb(255, 237, 171) 85%, rgb(217, 217, 210) 100%);
+  /* background: rgb(227,191,63);
 background: linear-gradient(180deg, rgba(227,191,63,1) 0%, rgba(227,191,63,1) 90%, rgb(217, 217, 210) 100%); */
 
 }
 
+#titleSec {
+  background: rgb(230, 231, 232);
+  background: linear-gradient(180deg, rgba(230, 231, 232, 1) 91%, rgb(255, 237, 173) 100%);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+
+  }
+}
+
+.showup {
+  animation: fade 1s linear;
+}
 
 /*----------------mobile---------------*/
 .wrap {
@@ -125,11 +151,12 @@ nav {
   /*ให้ขึ้นมาเรียงกัน*/
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
   flex-direction: column;
   color: #fff;
   overflow: hidden;
-  z-index: 1;
+  z-index: 20;
 }
 
 .sticky {
@@ -139,15 +166,17 @@ nav {
 
 .nav-toggle {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 30px;
+  top: 15px;
+  left: 5%;
+  font-size: 4vh;
   display: inline-block;
   cursor: pointer;
+
 }
 
+
 .logo {
-  margin: 40px 0 40px 0;
+  margin: 5px 0 5px 0;
   /*border: 1px solid red;*/
 }
 
@@ -187,7 +216,13 @@ ul li:hover {
 .active {
   /*เมื่อมีการเรียกใช้ตรงtoggle ที่เป็นแฮมเบอเกอร์*/
   display: flex;
+
 }
+
+
+
+
+
 
 #icon {
   width: auto;
@@ -401,18 +436,18 @@ ul li:hover {
   /* this */
   position: relative;
   color: aliceblue;
-  
+
 }
 
 .wrapper>div {
-  
+
   flex: 800px;
   /* and this */
   /* background: rgb(255, 255, 255); */
   position: relative;
   padding-left: 3%;
   padding-right: 3%;
-  
+
 }
 
 .wrapper2 {
@@ -422,11 +457,11 @@ ul li:hover {
   position: relative;
   color: rgb(0, 0, 0);
   margin-bottom: 5%;
-  
+
 }
 
 .wrapper2>div {
-  
+
   flex: 800px;
   /* and this */
   /* background: rgb(8, 5, 76); */
@@ -440,12 +475,12 @@ ul li:hover {
   /* this */
   position: relative;
   color: rgb(0, 0, 0);
- 
+
 }
 
 .wrapper3>div {
-  
-  
+
+
   flex: 800px;
   /* and this */
   /* background: rgb(8, 5, 76); */
@@ -454,29 +489,29 @@ ul li:hover {
 }
 
 .middle {
-  
+
   /* background-color: #d2c10b; */
   position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  
-  width: 100vw;
 
+  width: 100vw;
+  height: auto;
 }
 
 .title_text {
   display: block;
-  font-size: 3vh;
+  font-size: 30px;
   /* background-color: #D8D8D8; */
 
 }
 
 .info_text {
   display: block;
- 
-  font-size:2.8vw;
+
+  font-size: 2.8vw;
 
   /* background-color: aquamarine  ; */
   padding: 1%;
@@ -486,7 +521,7 @@ ul li:hover {
 #teacher1 {
 
   width: 80%;
-  
+
 }
 
 #teacher2 {
@@ -494,11 +529,12 @@ ul li:hover {
   width: 80%;
   padding: 5vw;
 }
+
 #teacher3 {
 
   width: 80%;
-  
-  
+
+
 }
 
 #left {
@@ -510,15 +546,17 @@ ul li:hover {
 
   float: right;
 }
-.tearmarks{
+
+.tearmarks {
   width: 120vw;
   left: -10%;
   position: relative;
-  
+
 
 }
-.star{
-  position:absolute ;
+
+.star {
+  position: absolute;
   width: 67%;
   top: -1%;
   height: auto;
@@ -527,16 +565,19 @@ ul li:hover {
 
 
 }
-.sumamry_pic{
+
+.sumamry_pic {
   z-index: 2;
-  
-  width: 100%;
+
+  width: 95%;
 }
-#sec6{
-  background: rgb(213,213,213);
-background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95%);
+
+#sec6 {
+  background: rgb(213, 213, 213);
+  background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 20%, rgb(2, 0, 0) 100%);
 
 }
+
 .button {
   background-color: #EDE646;
   border: none;
@@ -552,12 +593,29 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
   font-family: 'Krub';
   position: absolute;
   z-index: 3;
-  
+
 }
 
 .button:hover {
   background-color: #f9f37d;
 }
+
+.TitleTeacher {
+  width: 95%;
+  display: flex;
+  position: relative;
+  padding-left: 0%;
+  /* left: 4%; */
+}
+footer {
+  text-align: center;
+  background-color: #505050;
+  color: #E5E5E5;
+  padding: 3%;
+  font-size: 2vw;
+  line-height: 1.6;
+}
+
 /*-------desktop--------*/
 /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
 @media screen and (min-width: 800px) {
@@ -590,13 +648,6 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
     padding: 0;
     font-size: 15px;
 
-  }
-
-  #icon {
-    width: auto;
-    height: 6vh;
-    position: absolute;
-    margin-top: 1%;
   }
 
   .nav-toggle {
@@ -797,7 +848,7 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
     width: auto;
     height: 6vh;
     position: relative;
-    margin-top: 1%;
+    margin-top: 0%;
   }
 
   .wrapper {
@@ -825,7 +876,7 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
     display: flex;
     /* background-color: #d2c10b; */
     position: relative;
-    
+
     height: 100%;
     width: 50vw;
   }
@@ -858,6 +909,7 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
     width: 70%;
     height: auto;
   }
+
   #teacher3 {
     width: 100vw;
     height: auto;
@@ -884,8 +936,8 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
   }
 
   .wrapper2>div {
-    
-    
+
+
     flex: 10%;
     /* and this */
     /* background: rgb(8, 5, 76); */
@@ -896,65 +948,76 @@ background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95
   .wrapper3 {
     display: none;
   }
-  #sec3{
-    
+
+  footer {
+    text-align: center;
+    background-color: #505050;
+    color: #E5E5E5;
+    padding: 2%;
+    font-size: 1vw;
+    line-height: 1.6;
   }
-  /*------------------- test ---------------------*/
-#sec6{
-  background: rgb(213,213,213);
-background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95%);
 
-}
-.star{
-  position:absolute ;
-  width: 37%;
-  top: -1%;
-  height: auto;
-  z-index: 1;
-  animation: spin 10s infinite linear;
+  #sec6 {
+    background: rgb(213, 213, 213);
+    background: linear-gradient(180deg, rgb(215, 215, 215) 0%, rgb(136, 136, 136) 95%);
+   
+  }
+
+  .star {
+    position: absolute;
+    width: 30%;
+    top: -0%;
+    height: auto;
+    z-index: 1;
+    animation: spin 10s infinite linear;
 
 
-}
-.sumamry_pic{
-  z-index: 2;
+  }
+
+  .sumamry_pic {
+    z-index: 2;
   
-  width: 60%;
-}
-.tearmarks{
-  width: 80vw;
-  left: 0%;
-  height: auto;
-  position: relative;
-  
+    width: 50%;
+  }
 
-}
-.button {
-  background-color: #EDE646;
-  border: none;
-  color: black;
-  padding: 1% 2%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50px;
-  font-size: 40%;
-  font-family: 'Krub';
-  position: absolute;
-  z-index: 3;
-  
-}
+  .tearmarks {
+    width: 80vw;
+    left: 0%;
+    height: auto;
+    position: relative;
 
-.button:hover {
-  background-color: #f9f37d;
-}
-.TitleTeacher{
-  width: 100%;
-  display: flex;
-  position: relative;
-  /* left: 4%; */
-}
+
+  }
+
+  .button {
+    background-color: #EDE646;
+    border: none;
+    color: black;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 40%;
+    font-family: 'Krub';
+    position: absolute;
+    z-index: 3;
+
+  }
+
+  .button:hover {
+    background-color: #f9f37d;
+  }
+
+  .TitleTeacher {
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* left: 4%; */
+  }
 
 
 }

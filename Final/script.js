@@ -6,7 +6,8 @@ navBarToggle.addEventListener("click", function(){
 
 });
 
-let open_chest = document.getElementById('chest');
+let chest = document.getElementById('chest');
+let open_chest = document.getElementById('chest_open');
 let text = document.getElementById("intro");
 let bg = document.getElementById("bg");
 let note = document.getElementById("note");
@@ -15,13 +16,15 @@ let note_click = document.getElementById("note-open");
 let note_aura = document.getElementById("note_aura");
 let timeout;
 
-open_chest.addEventListener("click", function(item){
-    document.getElementById("chest").src = "https://raw.githubusercontent.com/meawpanipa/love-for-my-mom/main/picture/%E0%B8%AB%E0%B8%B5%E0%B8%9A3-min.png";
+chest.addEventListener("click", function(item){
+    chest.setAttribute("data-item-status", "close");
+    open_chest.setAttribute("data-item-status", "open");
     text.setAttribute("data-item-status", "open");
     bg.setAttribute("data-item-status", "open");
     note.setAttribute("data-item-status", "open");
     click_circle.setAttribute("data-item-status", "open");
 });
+
 function openChest(item){
     console.log(item)
     item.dataset.itemStatus = 'open';
@@ -38,5 +41,5 @@ click_circle.addEventListener("click", function(item){
 
 function changePage() {
 
-    location.replace("Page1-New.html")
+    location.replace("Page1.html")
   }
