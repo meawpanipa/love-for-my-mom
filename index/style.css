@@ -70,34 +70,32 @@ nav {
   /*ให้ขึ้นมาเรียงกัน*/
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
   flex-direction: column;
   color: #fff;
-
+  overflow: hidden;
+  z-index: 20;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
 }
 
 .nav-toggle {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 30px;
+  top: 15px;
+  left: 5%;
+  font-size: 4vh;
   display: inline-block;
   cursor: pointer;
-
+  
 }
+
 
 .logo {
-  position: relative;
-  width: auto;
-  height: 100%;
-  padding: 0%;
-  display: none;
-}
-#icon{
-  width: auto;
-  height: 5vh;
-  position: absolute;
-  margin-top: 1%;
+  margin: 5px 0 5px 0;
+  /*border: 1px solid red;*/
 }
 
 ul {
@@ -134,11 +132,16 @@ ul li:hover {
 }
 
 .active {
-  
+  /*เมื่อมีการเรียกใช้ตรงtoggle ที่เป็นแฮมเบอเกอร์*/
   display: flex;
 
 }
 
+.active {
+  
+  display: flex;
+
+}
 
 #chest[data-item-status="open"] {
   width: 70%;
