@@ -1,10 +1,12 @@
 body {
+  position: relative;
   background-color: #D8D8D8;
   height: 100vh;
   /*สูงเต็มหน้าเว็บ*/
   font-family: 'Kodchasan', sans-serif;
   margin: 0;
   padding: 0;
+  
 }
 
 body[data-item-status="close"] {
@@ -27,20 +29,19 @@ body[data-item-status="open"] {
   transition: all 2s;
 }
 
-@keyframes kraprip{
-  0% {
-    opacity: 0.5;
-    scale: 0.9;
-  }
-  50% {
-    opacity: 0.6;
-    scale: 1;
-  }
-  100% {
-    opacity: 0.5;
-    scale: 0.9;
-  }
 
+
+@keyframes fade{
+  from{ 
+    opacity: 0;
+   
+  }
+  to{ opacity: 1;
+     
+  }
+}
+.showup{
+  animation: fade 1s linear;
 }
  
   /* (D) MATCH HEIGHT */
@@ -69,20 +70,26 @@ nav {
   /*ให้ขึ้นมาเรียงกัน*/
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
   flex-direction: column;
   color: #fff;
-
+  overflow: hidden;
+  z-index: 20;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
 }
 
 .nav-toggle {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 30px;
+  top: 15px;
+  left: 5%;
+  font-size: 4vh;
   display: inline-block;
   cursor: pointer;
-
+  
 }
 
 
@@ -130,39 +137,64 @@ ul li:hover {
 
 }
 
-#chest {
-  width: 70%;
-  margin-top: 10vh;
-  cursor: pointer;
-  z-index: 1;
+.active {
+  
+  display: flex;
+
 }
 
+#chest[data-item-status="open"] {
+  width: 70%;
+  top: 0%;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  
+  
+}
+#chest_open[data-item-status="open"] {
+  width: 70%;
+  margin-left: 15%;
+ 
+  z-index: 1;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  
+}
+#chest[data-item-status="close"]{
+ 
+  display: none;
+}
+#chest_open[data-item-status="close"]{
+  
+  display: none;
+}
+
+
 .wrap {
+  top: -5%;
   display: flex;
   position: relative;
   justify-content: center;
-  margin-top: 20%;
+  
 
 }
 
 .open-text[data-item-status="close"] {
   display: flex;
-  position: relative;
+  position: absolute;
   justify-content: center;
   margin-top: 20 px;
   color: white;
   font-size: 20px;
-
+  top: 90%;
+  
 }
 
 .open-text[data-item-status="open"] {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  margin-top: 20 px;
-  color: black;
-  transition: all 1s;
-  font-size: 20px;
+  opacity: 0;
 }
 
 #note[data-item-status="close"] {
@@ -179,12 +211,37 @@ ul li:hover {
 
 #note[data-item-status="open"] {
   width: 60%;
-  margin-top: 56%;
+  top: 45%;
   position: absolute;
   display: block;
   opacity: 1;
   transition: scale 1s opacity 2s;
   z-index: 10;
+
+}
+#note-open[data-item-status="close"] {
+  width: 40%;
+  height: 100%;
+  margin-top: 5%;
+  position: absolute;
+  display: block;
+  opacity: 0;
+  
+  z-index: -1;
+
+}
+#note-open[data-item-status="open"] {
+  width: auto;
+  height: 120%;
+  top: 0%;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  animation: fade 1s;
+  scale: 1.1;
+  z-index: 10;
+  cursor: pointer;
+  
 
 }
 
@@ -207,35 +264,120 @@ ul li:hover {
 .res-circle[data-item-status="open"] {
     
   width: 13%;
-  margin-top: 63%;
+  top: 54%;
   border-radius: 50%;
   
  
   background: #866E17;
+  opacity: 0.7;
   
-  opacity: 1;
+  
   /* (C) NECESSARY TO POSITION TEXT BLOCK */
   line-height: 0;
   position: absolute;
   z-index: 21;
-  animation: kraprip 5s infinite;
+
   transition: opacity 2s;
   cursor: pointer;
 }
+.dot[data-item-status="close"] {
+  opacity: 0;
+}
+.dot[data-item-status="open"] {
+  opacity: 0.5;
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  border-radius: 50%;
+  left: 7%;
+  top: 20vh;
+  opacity: 50%;
+  animation: 5s aura infinite;
+  
+}
 
+.dot:before {
+content: '';
+position: absolute;
+top: 6px;
+left: 6px;
+right: 6px;
+bottom: 6px;
+border-radius: 50%;
+z-index: 1000;
+}
+
+.dot:after {
+content: '';
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+background: #f4e403;
+border-radius: 50%;
+z-index: 3;
+
+filter: blur(80px);
+animation: aura 2s;
+}
+@keyframes aura{
+from{opacity: 0.3;}
+50%{opacity: 0.8;}
+to{opacity: 0.3;}
+}
+
+
+.wrapper2 {
+  display: none;
+  flex-wrap: wrap;
+  /* this */
+  position: relative;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5%;
+  
+}
+
+.wrapper2>div {
+  
+  flex: 800px;
+  /* and this */
+  /* background: rgb(8, 5, 76); */
+  position: relative;
+
+}
+
+.wrapper3 {
+  display: flex;
+  flex-wrap: wrap;
+  /* this */
+  position: relative;
+  color: rgb(0, 0, 0);
+ 
+}
+
+.wrapper3>div {
+  
+  
+  flex: 800px;
+  /* and this */
+  /* background: rgb(8, 5, 76); */
+  position: relative;
+
+}
 /*-------desktop--------*/
 /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
 @media screen and (min-width: 800px) {
   nav {
-    height: 80px;
+    height: 50px;
     flex-direction: row;
 
   }
 
   .logo {
-    padding-left: 50px;
     margin: 0;
     width: 20%;
+    display: flex;
   }
 
   ul {
@@ -263,26 +405,49 @@ ul li:hover {
   }
 
   .wrap {
-    display: flex;
     position: relative;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: 0%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: -5vh;
+    
   }
 
-  #chest {
-    width: 600px;
-    margin-top: 0%;
+  #chest[data-item-status="open"] {
+    width: 20%;
+    top: 0%;
     z-index: 1;
     overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    min-width: 500px;
+    
+  }
+  #chest_open[data-item-status="open"] {
+    width: 20%;
+    margin-left: 0%;
+    
+    z-index: 1;
+    
+    cursor: pointer;
+    position: relative;
+    min-width: 500px;
+  }
+  #chest[data-item-status="close"]{
+   
+    display: none;
+  }
+  #chest_open[data-item-status="close"]{
+    
+    display: none;
   }
 
   #note[data-item-status="close"] {
-    width: 350px;
-    height: 150px;
-    margin-top: 350px;
+    
+    
     position: absolute;
-    display: block;
+    display: none;
+   
     opacity: 0;
     z-index: 0;
    
@@ -290,9 +455,23 @@ ul li:hover {
   }
 
   #note[data-item-status="open"] {
-    width: 530px;
-    height: 200px;
-    margin-top: 320px;
+ 
+    height: 29%;
+    width: 18%;
+    
+    position: absolute;
+    display: block;
+    opacity: 1;
+    transition: scale 1s opacity 2s;
+    z-index: 10;
+    top: 47%;
+    min-width: 400px;
+  }
+
+  #note[data-item-status="click"] {
+    width: 40%;
+    height: 100%;
+    
     position: absolute;
     display: block;
     opacity: 1;
@@ -300,35 +479,49 @@ ul li:hover {
     z-index: 10;
 
   }
-  /* #note[data-item-status="open"]:hover {
-    width: 350px;
-    height: 150px;
-    margin-top: 350px;
+
+ 
+  #note-open[data-item-status="close"] {
+    width: 40%;
+    height: 100%;
+    
+    position: absolute;
+    display: block;
+    opacity: 0;
+  
+    z-index: -1;
+
+  }
+  #note-open[data-item-status="open"] {
+    width: 35%;
+    height: auto;
+    top: 5%;
     position: absolute;
     display: block;
     opacity: 1;
-    transition: opacity 2s, scale 0.5s;
-    z-index: 10;
+    animation: fade 1s;
     scale: 1.1;
-    
+    z-index: 10;
     cursor: pointer;
-  } */
+    min-width: 500px;
+  }
 
   .open-text[data-item-status="close"] {
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
-    margin-top: 20 px;
+    top: 90%;
     color: white;
-    font-size: 20px;
-
+    font-size: 25px;
+    z-index: 10;
   }
 
   .open-text[data-item-status="open"] {
-    display: flex;
-    position: relative;
+    display: none;
+    position: absolute;
     justify-content: center;
     margin-top: 20 px;
+    z-index: 10;
     color: black;
     transition: all 1s;
     font-size: 20px;
@@ -337,7 +530,7 @@ ul li:hover {
       
     width: 100px;
     border-radius: 50%;
-    margin-top: 380px;
+    
    
     background: #866E17;
     
@@ -351,21 +544,95 @@ ul li:hover {
   }
   .res-circle[data-item-status="open"] {
     
-    width: 100px;
+    width: 5.5%;
     border-radius: 50%;
-    margin-top: 380px;
+    top: 54%;
    
     background: #866E17;
-    
-    opacity: 1;
+    opacity: 0.7;
+ 
     /* (C) NECESSARY TO POSITION TEXT BLOCK */
     line-height: 0;
     position: absolute;
     z-index: 21;
-    animation: kraprip 5s infinite;
-    transition: opacity 2s;
+    
+    min-width: 100px;
     cursor: pointer;
   }
+  
+  .dot[data-item-status="close"] {
+    opacity: 0;
+  }
+  .dot[data-item-status="open"] {
+    opacity: 0.5;
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    border-radius: 50%;
+    left: 28vw;
+    top: 10vh;
+    opacity: 50%;
+    animation: 5s aura infinite;
+    
+  }
+
+.dot:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.dot:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #f4e403;
+  border-radius: 50%;
+  z-index: 3;
+ 
+  filter: blur(80px);
+  animation: aura 2s;
+}
+@keyframes aura{
+  from{opacity: 0.3;}
+  50%{opacity: 0.8;}
+  to{opacity: 0.3;}
+}
+
+.wrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* this */
+
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0vh;
+}
+
+.wrapper2>div {
+  
+  
+  flex: 10%;
+  /* and this */
+  /* background: rgb(8, 5, 76); */
+
+
+}
+
+.wrapper3 {
+  display: none;
+}
+
   
 
 }
