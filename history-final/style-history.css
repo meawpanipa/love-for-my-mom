@@ -707,8 +707,29 @@ body {
         position: relative;
         margin-top: 0%;
       }
+      .sec1-con-mobile{
+        display: none;
+      }
 }
 @media screen and (max-width: 800px){
+    .sec1-con{
+        display: none;
+    }
+    .sec1-con-mobile{
+        height: 100%;
+         /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .TitleHis-mobile{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        position: relative;
+        
+    }
     .sec2-con{
         display: none;
     }
