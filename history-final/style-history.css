@@ -645,6 +645,14 @@ body {
     position: relative;
     margin-top: 1%;
   }
+  footer {
+    text-align: center;
+    background-color: #505050;
+    color: #E5E5E5;
+    padding: 2%;
+    font-size: 1vw;
+    line-height: 1.6;
+  }
 /*-------desktop--------*/
 /*ถ้าหน้าจอใหญ่กว่า 800 pxจะเปลี่ยนรูปแบบ */
 @media screen and (min-width: 800px){
@@ -1080,5 +1088,16 @@ body {
       }
       .sec8-img{
         padding-bottom: 2%;
+      }
+      footer {
+        text-align: center;
+        background-color: #505050;
+        color: #E5E5E5;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 2vw;
+        line-height: 1.6;
       }
 }
