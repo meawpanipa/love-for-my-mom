@@ -26,32 +26,6 @@ click_circle.addEventListener("click", function (item) {
     yun5.setAttribute("data-item-status", "open");
     btnintro.setAttribute("data-item-status", "open");
     kem.setAttribute("data-item-status", "close");
-    click_circle2.setAttribute("data-item-status", "close");
-    document.getElementById("textsuk").innerHTML = "คือ ตารางหรือลายเส้นซึ่งเป็นตัวเลขอักขระหรือรูปภาพที่เขียนสัก<br>หรือแกะสลักลงบนแผ่นผ้า ผิวหนัง ไม้ โลหะ เป็นต้น ถือว่าเป็นของขลัง";
-    document.getElementById("pb").innerHTML = '"ยันต์"';
-    timeout = setTimeout(alertFunc, 2000);
-})
-
-let yun12 = document.getElementById('yod12');
-let yun22 = document.getElementById('yod22');
-let yun32 = document.getElementById('tid82');
-let yun42 = document.getElementById('yod92');
-let yun52 = document.getElementById('tiger2');
-let kem22 = document.getElementById('kem2');
-let btnintro2 = document.getElementById('btnintro2');
-let click_circle2 = document.getElementById("click_circle2");
-// let text = document.getElementById('pb').innerHTML;
-// let result = text.bold();
-
-
-click_circle.addEventListener("click", function (item) {
-    yun1.setAttribute("data-item-status", "open");
-    yun2.setAttribute("data-item-status", "open");
-    yun3.setAttribute("data-item-status", "open");
-    yun4.setAttribute("data-item-status", "open");
-    yun5.setAttribute("data-item-status", "open");
-    btnintro.setAttribute("data-item-status", "open");
-    kem.setAttribute("data-item-status", "close");
     click_circle.setAttribute("data-item-status", "close");
     document.getElementById("textsuk").innerHTML = "คือ ตารางหรือลายเส้นซึ่งเป็นตัวเลขอักขระหรือรูปภาพที่เขียนสัก<br>หรือแกะสลักลงบนแผ่นผ้า ผิวหนัง ไม้ โลหะ เป็นต้น ถือว่าเป็นของขลัง";
     document.getElementById("pb").innerHTML = '"ยันต์"';
