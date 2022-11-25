@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traditional</title>
     <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="card_style.css">
     <link rel="stylesheet" href="Nav.css">
     <link rel="stylesheet" href="loader.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -31,7 +32,7 @@
             </a>
         </div>
         <ul id="js-menu">
-            <li><a href="Page1-New.html">หน้าแรก</a></li>
+            <li><a href="Page1.html">หน้าแรก</a></li>
             <li><a href="index-history.html">ประวัติการสัก</a></li>
             <li><a href="card.html">ค่านิยมในสังคม</a></li>
             <li><a href="sage.html">อาจารย์สักคนสำคัญ</a></li>
@@ -39,7 +40,7 @@
         </ul>
     </nav>
 
-        <div class="comtainer">
+        <div class="comtainer showup">
             <section>
                 <div class="block">
                     <div class="TitleHis_block">
@@ -53,7 +54,7 @@
         </div>
 
     <div class="container">
-        <section style="height:100%; justify-content: center; align-items: center; text-align: center;">
+        <section style="justify-content: center; align-items: center; text-align: center;">
             <div id="overlay">
             </div>
             <div class="card-block" data-item-status="close" id="card-popup">
@@ -70,7 +71,6 @@
                             </div>
                         </div>
                         <div class="card_info" id="card_description">
-
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
                     <div class="sec3-img">
                         <img id="sec3-map" src="https://github.com/meawpanipa/love-for-my-mom/raw/main/picture/pic-page4-map/sec2-2.png">
                     </div>
-                    <div class="sec3-info-3">
+                    <div class="sec3-info-3" >
                         <h2 style="font-family: 'Krub';">ภาคตะวันออกเฉียงเหนือ</h2>
                     <div class="sec3-info-2">
                         <p>&emsp;&emsp;การสักของคนไทยพวนที่บ้านเชียง จังหวัดอุดรธานี ที่เรียกว่า การสักขาลาย จุดมุ่งหมายของการสัก คือ
@@ -272,10 +272,15 @@
         <section>
             <p id="north_pb3"><b>ลาวพุงดำ</b> <br>เป็นคำเรียกกลุ่มคนที่นิยมทำการสักขาจากขาท่อนล่างขึ้นมาจนถึงบริเวณ <br>พุงหรือเอว จึงมองเห็นเป็นพุงดำหรือท้องดำ ส่วนใหญ่จะอยู่ <br>ทางตอนเหนือของไทย เป็นคนไทยใหญ่ ล้านนา โยนก แพร่ น่าน</p>
             <p id="north_pb4">ตัวอย่างเช่น ภาพจิตรกรรมฝาผนังรูป <br>ปู่ม่านย่าม่าน ที่ วัดภูมินทร์ จ.น่าน ที่แสดงให้เห็นรอยสักแบบลาวพุงดำ</p>
+            <div id="btnintro" data-item-status="open" onclick="changePage()">
+            <div class="btnintro-txt">อาจารย์สักคนสำคัญ</div>
+            </div>
             <img id="north5" src="https://github.com/meawpanipa/love-for-my-mom/blob/main/%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B8%AD/picture/%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%9E%E0%B8%B8%E0%B8%87%E0%B8%94%E0%B8%B3.png?raw=true">
+        
         </section>
     </div>
-
+    
+        
 
     <footer>
         เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์<br>และวิชาการโปรแกรมและสื่อประสม แขนงวิชาการพัฒนาสื่อประสมและเกม

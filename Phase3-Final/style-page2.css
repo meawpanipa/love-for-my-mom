@@ -14,9 +14,13 @@ body {
     }
   #text1{
         font-size: 20px;
-        margin-top: 10%;
+        top: 20%;
         position: relative;
     }
+  #Hiscir{
+    top: 10%;
+    left: 75.5%;
+  }
     #pb{
         font-size: 70%;
         margin-left: 5%;
@@ -57,17 +61,17 @@ body {
     }
     #pb3{
         font-size: 70%;
-        margin-left: 5%;
+        left: 5%;
         position: relative;
     }
     #pb4{
-        font-size: 70%;
+        font-size: 65%;
         margin-top: 5%;
-        margin-left: 5%;
+        left: 5%;
         position: relative;
     }
     #pb5{
-        font-size: 70%;
+        font-size: 65%;
         margin-top: 5%;
         margin-left: 5%;
         position: relative;
@@ -129,11 +133,11 @@ body {
     }
     .line-right {
     position: absolute;
-    top: 10%;
+    top: 4%;
     left: 77%;
     /* transform: translate(-50%, -50%); */
-    width: 0.5%;
-    height: 150vh;
+    width: 0.8%;
+    height: 128vh;
     background-color: #E94A4A;
     z-index: 10;
     }
@@ -186,7 +190,7 @@ body {
     #pb2{
         font-size: 90%;
         margin-top: 2%;
-        margin-left: 28%;
+        left: 28%;
         position: relative;
     }
     #pic1{
@@ -273,8 +277,8 @@ body {
     top: 15%;
     left: 77%;
     /* transform: translate(-50%, -33.5%); */
-    width: 0.5%;
-    height: 180vh;
+    width: 0.8%;
+    height: 200vh;
     background-color: #E94A4A;
     z-index: 10;
     }

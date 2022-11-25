@@ -187,4 +187,7 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+function changePage() {
 
+  location.replace("sage.html")
+}

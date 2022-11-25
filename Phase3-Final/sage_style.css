@@ -8,6 +8,24 @@ body {
 
 }
 
+@keyframes kraprip{
+  from{ 
+    opacity: 0.6;
+    scale: 1;
+
+  }
+
+
+  50%  {
+    opacity: 0.9;
+    scale: 1.1;
+  }
+
+  100% {
+    opacity: 0.6;
+    scale: 1;
+  }
+}
 
 
 section {
@@ -420,6 +438,7 @@ ul li:hover {
 .circle[data-item-status="open"] {
 
   opacity: 1;
+  animation: kraprip 3s infinite;
 
 }
 
